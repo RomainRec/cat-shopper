@@ -5,6 +5,8 @@ ruby '2.5.1'
 
 gem 'devise'
 gem 'faker'
+gem 'rails-erd', group: :development
+gem 'dotenv'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
