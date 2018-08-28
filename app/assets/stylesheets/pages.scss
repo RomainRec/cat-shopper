@@ -63,6 +63,13 @@ CSS INDEX
 /*-----------------------------------------
     4.1 Service Area
 ------------------------------------------*/
+
+.slider-title
+{
+  color: white;
+}
+
+
 .service-area {
 	background-color: #ffffff;
 	display: block;
@@ -78,7 +85,7 @@ CSS INDEX
 	transition: all 0.5s ease 0s;
 }
 .service-item:hover > i {
-	color: #8ec448;
+	color: rgba(#c448a9, 0.9);
 }
 .service-item > h6 {
 	font-size: 13px;
@@ -122,10 +129,10 @@ CSS INDEX
 }
 .filter-catagory-menu li:hover,
  .filter-catagory-menu li.active{
-    color:#8ec448;
+    color:rgba(#c448a9, 0.9);
 }
 #popular-products .filter-catagory-menu li.active{
-	color:#b83932;
+	color:rgba(#c448a9, 0.9);
 }
 .portfolio-items .mix, .product-items .mix{
 	display: none;
@@ -173,7 +180,7 @@ CSS INDEX
 	visibility: hidden;
 }
 .portfolio-content > h6 a:hover{
-	color:#8ec448;
+	color:rgba(#c448a9, 0.9);
 }
 .portfolio-content > p {
 	color: #fff;
@@ -185,7 +192,7 @@ CSS INDEX
 	font-style: italic;
 }
 .ovrly-btns {
-	background-color: #8ec448;
+	background-color: rgba(#c448a9, 0.9);
 	border-radius: 50%;
 	color: #fff;
 	display: inline-block;
@@ -202,7 +209,7 @@ CSS INDEX
 }
 .ovrly-btns:hover{
 	background: #fff;
-	color: #8ec448;
+	color: rgba(#c448a9, 0.9);
 }
 .portfolio-item:hover .portfolio-img > a::before {
 	opacity: 1;
@@ -240,7 +247,7 @@ CSS INDEX
 	width: 100%;
 }
 .about-left::before {
-	background-color: #8ec448;
+	background-color: rgba(#c448a9, 0.9);
 	content: "";
 	height: 310px;
 	margin-top: 18px;
@@ -300,7 +307,7 @@ CSS INDEX
     box-shadow: none;
 }
 .progress-item .progress-bar {
-    background-color: #8ec448;
+    background-color: rgba(#c448a9, 0.9);
 }
 .skill-man {
 	display: block;
@@ -407,7 +414,7 @@ CSS INDEX
 	width: 40px;
 }
 .social-links > li > a:hover{
-	color:#8EC448;
+	color:rgba(#c448a9, 0.9);
 }
 .social-links > li > a.facebook:hover{
 	color:#3B5998;
@@ -577,7 +584,7 @@ CSS INDEX
  .carousel-control-1 .owl-controls.clickable .owl-page:hover span,
  .carousel-control-2 .owl-controls .owl-page.active span,
  .carousel-control-2 .owl-controls.clickable .owl-page:hover span {
-	background-color: #8ec448;
+	background-color: rgba(#c448a9, 0.9);
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius:50%;
 }
@@ -648,7 +655,7 @@ CSS INDEX
     color:#fff;
 }
 .blog-thumb ul.social-links li a:hover{
-	background-color:#8ec448;
+	background-color:rgba(#c448a9, 0.9);
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .single-blog-feed:hover .have-overly > a:after,
@@ -681,7 +688,7 @@ CSS INDEX
     margin-right: 5px;
 }
 .blog-meta a:hover{
-    color:#8ec448;
+    color:rgba(#c448a9, 0.9);
 }
 .blog-meta > p {
 	font-size: 12px;
@@ -695,7 +702,7 @@ CSS INDEX
     color: #353535;
 }
 .blog-content a:hover{
-    color:#8ec448;
+    color:rgba(#c448a9, 0.9);
 }
 .blog-post-heading {
 	font-size: 12px;
@@ -724,7 +731,7 @@ CSS INDEX
 }
 .carousel-control-2 .owl-controls .owl-page.active span,
  .carousel-control-1 .owl-controls.clickable .owl-page:hover span {
-	background-color: #8ec448;
+	background-color: rgba(#c448a9, 0.9);
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 /*-----------------------------------------
@@ -775,7 +782,7 @@ CSS INDEX
 }
 .carousel-control-flat .owl-controls .owl-page.active span,
  .carousel-control-flat .owl-controls.clickable .owl-page:hover span {
-	background-color: #8ec448;
+	background-color: rgba(#c448a9, 0.9);
 	border-radius: 5px;
 }
 .carousel-control-flat .owl-controls .owl-page:nth-child(1) {
@@ -853,7 +860,7 @@ CSS INDEX
 	font-size:16px;
 }
 .subscribe-submit:hover {
-    color: #8ec448;
+    color: rgba(#c448a9, 0.9);
 }
 /*====================================================
    5. Home-02(Travel)
@@ -2373,7 +2380,7 @@ CSS INDEX
 	transition: all 0.5s ease 0s;
 }
 .product-buttons > a:hover{
-	color:#b83932;
+	color:rgba(#c448a9, 0.9);
 }
 .product-buttons > a::after {
 	background: #353535 none repeat scroll 0 0;
@@ -2414,7 +2421,7 @@ CSS INDEX
 	font-weight: 700;
 }
 .product-name > a:hover{
-	color:#b83932;
+	color:rgba(#c448a9, 0.9);
 }
 .price-stars {
 	display: block;
@@ -2556,7 +2563,7 @@ CSS INDEX
 }
 .fasion-testimonials .slick-arrow:hover {
 	border: 1px solid rgba(0, 0, 0, 0.15);
-	background:#b83932;
+	background:rgba(#c448a9, 0.9);
 }
 .fasion-testimonials .arrow-next{
 	right:-8%;
@@ -2598,7 +2605,7 @@ CSS INDEX
 	background: #fff none repeat scroll 0 0;
 	border-radius: 50%;
 	border:1px solid rgba(0, 0, 0, 0.15);
-	color: #b83932;
+	color: rgba(#c448a9, 0.9);
 	display: inline-block;
 	font-size: 22px;
 	height: 50px;
@@ -2609,7 +2616,7 @@ CSS INDEX
 	opacity:0;
 }
 .thub-link > a:hover{
-	background-color:#b83932;
+	background-color:rgba(#c448a9, 0.9);
 	color:#ffffff;
 }
 .fasion-single-blog:hover .thub-link > a{
@@ -2630,7 +2637,7 @@ CSS INDEX
 	color:#353535;
 }
 .fasion-bcontent > h5 a:hover, .fasion-bcontent a:hover{
-	color:#b83932;
+	color:rgba(#c448a9, 0.9);
 }
 .fasion-bcontent .fb-meta {
 	font-size: 13px;
@@ -2776,7 +2783,7 @@ CSS INDEX
 }
 .product-size > ul > li > a:hover{
 	color:#fff;
-	background:#b83932;
+	background:rgba(#c448a9, 0.9);
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .quantity-control {
@@ -2894,7 +2901,7 @@ CSS INDEX
 	display: block;
 }
 .tab-bar > li.active > a, .tab-bar > li:hover > a{
-	color:#b83932;
+	color:rgba(#c448a9, 0.9);
 }
 .prodcut-toolbar .sort-form,
  .prodcut-toolbar p{
@@ -2916,7 +2923,7 @@ CSS INDEX
 	color:#353535;
 }
 .products-listview-inner .single-product a:hover{
-	color:#b83932;
+	color:rgba(#c448a9, 0.9);
 }
 /*-----------------------------------------
     Product Pagination
@@ -2942,7 +2949,7 @@ ul.default-pagination li a i{
 	font-size:30px;
 }
 ul.default-pagination li a:hover, ul.default-pagination li.current a{
-	color:#b83932;
+	color:rgba(#c448a9, 0.9);
 }
 /* Widgets */
 .widget {
@@ -2980,13 +2987,13 @@ ul.default-pagination li a:hover, ul.default-pagination li.current a{
 	padding:2px 0;
 }
 .ecommerce .widget ul li a:hover, .ecommerce .widget ul li:hover::before{
-	color:#b83932;
+	color:rgba(#c448a9, 0.9);
 }
 .widget ul li a:hover, .widget ul li:hover::before{
 	color:#838383;
 }
 .corporate .widget ul li a:hover, .corporate .widget ul li:hover::before{
-	color:#8ec448;
+	color:rgba(#c448a9, 0.9);
 }
 .widget ul li::before {
 	content:"\eb27";
@@ -3055,7 +3062,7 @@ ul.default-pagination li a:hover, ul.default-pagination li.current a{
 	margin-bottom: 10px;
 }
 .price_filter .ui-slider-range {
-    background-color: #b83932;
+    background-color: rgba(#c448a9, 0.9);
     border-radius: 0;
     margin-left: 6px;
     z-index: 1;
@@ -3066,7 +3073,7 @@ ul.default-pagination li a:hover, ul.default-pagination li.current a{
 }
 .ui-slider-handle.ui-state-default.ui-corner-all {
 	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-	border: 6px solid #b83932;
+	border: 6px solid rgba(#c448a9, 0.9);
 	border-radius: 50%;
 	height: 12px;
 	margin-top: 0;
@@ -3158,7 +3165,7 @@ ul.default-pagination li a:hover, ul.default-pagination li.current a{
 	text-align:left;
 }
 .cart-table td a:hover{
-	color:#b83932;
+	color:rgba(#c448a9, 0.9);
 }
 /* Cart Widget */
 .cart-widget p {
@@ -3287,7 +3294,7 @@ ul.default-pagination li a:hover, ul.default-pagination li.current a{
 	z-index: 1;
 }
 .details-thumb-small .slick-arrow:hover{
-	background:#b83932;
+	background:rgba(#c448a9, 0.9);
 	border:1px solid #c83f38;
 	color:#fff;
 }
@@ -3330,7 +3337,7 @@ ul.default-pagination li a:hover, ul.default-pagination li.current a{
 }
 .description-tab-menu ul li.active a,
  .description-tab-menu ul li a:hover{
-	color:#b83932;
+	color:rgba(#c448a9, 0.9);
  }
 /*====================================================
   14. Contact Us
@@ -3363,7 +3370,7 @@ ul.default-pagination li a:hover, ul.default-pagination li.current a{
 }
 /* Corporate Contact */
 .corporate .contact-us .widget-contact i{
-	color:#8ec448;
+	color:rgba(#c448a9, 0.9);
 }
 /*=========================================
    15. Blog Page
@@ -3396,7 +3403,7 @@ ul.default-pagination li a:hover, ul.default-pagination li.current a{
 	color:#fff;
 }
 .post-thumbnail ul.social-links li a:hover{
-	background-color:#8ec448;
+	background-color:rgba(#c448a9, 0.9);
 	border:1px solid rgba(0, 0, 0, 0.1);
 	color:#ffffff;
 }
@@ -3433,7 +3440,7 @@ ul.default-pagination li a:hover, ul.default-pagination li.current a{
 	font-weight: 700;
 }
 .post-meta a:hover{
-	color:#8ec448;
+	color:rgba(#c448a9, 0.9);
 }
 .post-meta a i {
     margin-right: 5px;
@@ -3452,13 +3459,13 @@ ul.default-pagination li a:hover, ul.default-pagination li.current a{
 	margin-bottom: 15px;
 }
 .entry-title a:hover{
-	color:#8ec448;
+	color:rgba(#c448a9, 0.9);
 }
 .single-post .readmore {
     color:#353535;
 }
 .single-post .readmore:hover {
-	color:#8ec448;
+	color:rgba(#c448a9, 0.9);
 }
 .entry-content {
 	margin: 0;
@@ -3536,7 +3543,7 @@ ul.default-pagination li a:hover, ul.default-pagination li.current a{
 	position: relative;
 }
 .post-style-2 .post-thumbnail > a::before {
-	background-color:#8ec448 ;
+	background-color:rgba(#c448a9, 0.9) ;
 	content: "";
 	height: 100%;
 	left: 0;
@@ -3561,7 +3568,7 @@ ul.default-pagination li a:hover, ul.default-pagination li.current a{
   transform: scale(1);
 }
 .post-style-2 .post-meta {
-	background-color: #8ec448;
+	background-color: rgba(#c448a9, 0.9);
 	color: #fff;
 	display: block;
 	margin-bottom: 20px;
@@ -3581,7 +3588,7 @@ ul.default-pagination li a:hover, ul.default-pagination li.current a{
     margin: 0 10px;
 }
 .post-style-2 .entry-title a:hover {
-	color:#8ec448;
+	color:rgba(#c448a9, 0.9);
 }
 .post-style-2 .readmore {
 	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -3595,7 +3602,7 @@ ul.default-pagination li a:hover, ul.default-pagination li.current a{
 	padding: 1px 12px;
 }
 .post-style-2 .readmore:hover {
-	background-color: #8ec448;
+	background-color: rgba(#c448a9, 0.9);
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	color: #fff !important;
 }
@@ -3603,7 +3610,7 @@ ul.default-pagination li a:hover, ul.default-pagination li.current a{
     margin-top: 0;
 }
 .post-style-2 .post-carousel .owl-controls .owl-buttons div:hover{
-	background-color:#8ec448;
+	background-color:rgba(#c448a9, 0.9);
 	border:1px solid rgba(0, 0, 0, 0.1);
 	color:#fff;
 }
@@ -3684,7 +3691,7 @@ ul.default-pagination li a:hover, ul.default-pagination li.current a{
 	text-transform: uppercase;
 }
 .widget ul.tags-cloud-list li a:hover {
-	background-color:#8ec448;
+	background-color:rgba(#c448a9, 0.9);
 	color:#fff !important;
 }
 /* Widget Tabs */
@@ -3857,7 +3864,7 @@ ul.default-pagination li a:hover, ul.default-pagination li.current a{
 	transition: color 0.3s ease;
 }
 .comment-box .comment-head i:hover {
-    color: #8ec448;
+    color: rgba(#c448a9, 0.9);
 }
 .comment-box .comment-name {
 	color: #555;
@@ -3925,7 +3932,7 @@ ul.default-pagination li a:hover, ul.default-pagination li.current a{
 	padding: 0 20px;
 }
 .btn.btn-404:hover{
-	background-color:#8ec448;
+	background-color:rgba(#c448a9, 0.9);
 	color:#fff;
 	border:1px solid rgba(0, 0, 0, 0.1);
 }
@@ -3952,7 +3959,7 @@ ul.default-pagination li a:hover, ul.default-pagination li.current a{
 	width: 34px;
 }
 .search-wrap i.icofont:hover{
-	color:#8ec448;
+	color:rgba(#c448a9, 0.9);
 }
 /*=======================
     19. Scroll UP

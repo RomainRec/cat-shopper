@@ -51,7 +51,7 @@ NOTE: This is Footer style file. All footer related style included in this file.
     color: #353535;
 }
 .widget-right-info a:hover {
-	color:#8ec448;
+	color:rgba(#c448a9, 0.9);
 }
 .medical .widget-right-info a:hover {
 	color:#0199ed;
@@ -188,7 +188,7 @@ NOTE: This is Footer style file. All footer related style included in this file.
     color: #353535;
 }
 .widget-blog-content a:hover{
-    color: #8ec448;
+    color: rgba(#c448a9, 0.9);
 }
 /* Footer Bottom Area */
 .footer-bottom-area {
@@ -234,7 +234,7 @@ ul.social-links.social-dark > li > a {
 	color:#fff;
 }
 .widget-contact ul li a:hover{
-	color:#8ec448;
+	color:rgba(#c448a9, 0.9);
 }
 .widget-contact ul li i {
 	display: inline-block;
@@ -296,10 +296,10 @@ ul.social-links.social-dark > li > a {
 	position: relative;
 }
 .wedget-links a:hover{
-	color:#b83932;
+	color:rgba(#c448a9, 0.9);
 }
 .corporate .wedget-links a:hover{
-	color:#8ec448;
+	color:rgba(#c448a9, 0.9);
 }
 .wedget-links li a::before {
     content: "\eb33";
@@ -366,7 +366,7 @@ ul.social-links.social-dark > li > a {
 	width: 10%;
 }
 .widget-subscripbe .widget-sbtn:hover{
-	color:#b83932;
+	color:rgba(#c448a9, 0.9);
 }
 .widget-newsletter .widget-social-links > li > a i {
     font-size: 18px;
@@ -440,7 +440,7 @@ table.table-hours {
 	color:#ffffff;
 }
 .ecommerce .color-secondary a:hover{
-	color:#b83932;
+	color:rgba(#c448a9, 0.9);
 }
 .medical .color-secondary a:hover{
 	color:#0199ed;
@@ -485,7 +485,7 @@ table.table-hours {
     border-top: 1px solid #1c1c1c;
 }
 .footer-dark a:hover{
-	color:#8ec448;
+	color:rgba(#c448a9, 0.9);
 }
 .medical .footer-dark .footer-bottom-area{
 	background:transparent;	
@@ -497,7 +497,7 @@ table.table-hours {
 	color:#353535;
 }
 .ecommerce .footer-dark a:hover{
-	color:#b83932;
+	color:rgba(#c448a9, 0.9);
 }
 .medical .footer-dark a:hover{
 	color:#0199ed;
