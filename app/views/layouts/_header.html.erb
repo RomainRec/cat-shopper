@@ -36,8 +36,6 @@
                       </ul>
                       <!-- End Sub Dropdown -->
                     </li>
-
-
                   </ul>
                   <!-- End Dropdown -->
                 </li>
@@ -45,8 +43,6 @@
                 </li>
                 <li><a href="#">Qui sommes-nous ?</a>
                 </li>
-
-
                 <li class="mega-parent"><a href="contact.html">Nous contacter</a>
                   <!-- Start Mega Menu -->
                   <div class="mega-menu-area">
@@ -94,14 +90,20 @@
             <!-- End Primary Menu -->
           </div>
           <div class="hidden-xs col-sm-4 col-sm-6 col-md-2">
-            <!-- Start Search Box -->
-            <div class="search-box-area trans-5">
-              <form action="#" class="search-box">
-                <input class="single-input" placeholder="Rechercher...." type="text">
-                <button class="src-btn"><i class="fa fa-search"></i></button>
-              </form>
-            </div>
-             <!-- End Search Box -->
+            <ul>
+              <% if user_signed_in? %>
+              <li>
+                <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+              </li>
+              <% else %>
+              <li>
+                <%= link_to 'sign in', new_user_session_path %>
+              </li>
+              <li>
+                <%= link_to "sign up", new_user_registration_path %>
+              </li>
+              <% end %>
+            </ul>
           </div>
         </div>
       </div>

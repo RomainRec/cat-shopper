@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'pages#index'
   get 'items/index', to: 'items#index'
   resource :items
-  get 'cards/index', to: 'cards#index'
+  get 'carts/index', to: 'carts#index'
   resource :carts
   get 'orders/index', to: 'orders#index'
   resource :orders
