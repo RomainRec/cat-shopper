@@ -134,8 +134,8 @@ CSS INDEX
 }
 .unify-owl-slider .owl-controls .owl-page.active span,
  .unify-owl-slider .owl-controls.clickable .owl-page:hover span {
-	background-color: #8ec448;
-	border: 1px solid #8ec448;
+	background-color: rgba(#c448a9, 0.9);
+	border: 1px solid rgba(#c448a9, 0.9);
 	border-radius: 50%;
 }
 /* Default Slider Animations */
@@ -418,7 +418,7 @@ CSS INDEX
    color:#d83240;	
 }
 .slider-ecommerce .slide-content h3 {
-	color:#b83932;
+	color:rgba(#c448a9, 0.9);
 	margin-bottom:10px;
 }
 .slider-ecommerce .slide-content p {
@@ -443,7 +443,7 @@ CSS INDEX
 	width: 50px;
 }
 .slider-ecommerce .owl-controls .owl-buttons div:hover{
-	background:#b83932;
+	background:rgba(#c448a9, 0.9);
 	border:1px solid rgba(0, 0, 0, 0.1);
 	color:#fff;
 }
