@@ -30,3 +30,5 @@ mailjet.rb
 erd.pdf
 
 .env
+
+mailjet.rb
