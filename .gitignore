@@ -29,3 +29,5 @@
 erd.pdf
 
 .env
+
+mailjet.rb
