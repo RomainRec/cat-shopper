@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
   <head>
     <title>CatShopper</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Le magasin des chats</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="assets/img/favicon.ico" >
-<!-- All CSS Here -->
-<!-- Bootstrap fremwork main css -->
+    <!-- All CSS Here -->
+    <!-- Bootstrap fremwork main css -->
     <link rel="stylesheet" href="assets/assets/css/bootstrap.min.css">
-<!-- Animate CSS -->
+    <!-- Animate CSS -->
     <link rel="stylesheet" href="assets/css/animate.css">
     <!-- This theme-plugins.css file contents all plugings CSS file. -->
     <link rel="stylesheet" href="assets/css/theme-plugins.css">
@@ -26,16 +24,16 @@
         <!-- Theme main style -->
     <link rel="stylesheet" href="style.css">
     <!-- Responsive CSS -->
-        <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- User style -->
     <link rel="stylesheet" href="assets/css/custom.css">
-
     <!-- Modernizr js -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
 
-  <body>
-    
+  <body class="corporate">
+    <%= render 'layouts/header' %>
     <%= yield %>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
