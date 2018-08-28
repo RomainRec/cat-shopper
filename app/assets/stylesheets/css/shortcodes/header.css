@@ -68,7 +68,7 @@ body {
 /*------------------------
  1.2 Hyperlink------------ */
 a{
-	color:#8EC448;
+	color:rgba(#c448a9, 0.9);
 	/*transition*/
 	-webkit-transition:all 0.3s ease-in-out;
 	   -moz-transition:all 0.3s ease-in-out;
@@ -623,7 +623,7 @@ img {
     margin-bottom: 35px;
 }
 .section-title.style-2 > h2::before {
-	background: #b83932 none repeat scroll 0 0;
+	background: rgba(#c448a9, 0.9) none repeat scroll 0 0;
 	height: 1px;
 	left: 0;
 	margin-left: 0;
@@ -659,7 +659,7 @@ img {
 	color: #353535;	
 }
 .btn-cor.btn-borders:hover{
-	background-color: #8ec448;
+	background-color: rgba(#c448a9, 0.9);
 	color: #fff;	
 }
 .btn-load.btn-borders {
@@ -668,14 +668,14 @@ img {
 	color: #353535;
 }
 .btn-load.btn-borders:hover{
-	background-color: #8ec448;
+	background-color: rgba(#c448a9, 0.9);
 	color: #fff;
 }
 .btn.btn-borders:hover{
 	border:1px solid rgba(0, 0, 0, 0.1);
 }
 .btn-cor{
-	background-color: #8ec448;
+	background-color: rgba(#c448a9, 0.9);
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	color: #fff;
 }
@@ -765,7 +765,7 @@ img {
 }
 /* Ecommerce Page Buttons */
 .btn-brown {
-	background: #b83932 none repeat scroll 0 0;
+	background: rgba(#c448a9, 0.9) none repeat scroll 0 0;
 	color: #fff;
 	font-family: RalewayHeavy;
 	font-size: 13px;
@@ -782,7 +782,7 @@ img {
 	color:#353535;
 }
 .btn-brown.btn-borders:hover{
-	background: #b83932  none repeat scroll 0 0;
+	background: rgba(#c448a9, 0.9)  none repeat scroll 0 0;
 	color: #fff;	
 	border:1px solid rgba(0, 0, 0, 0.1);
 }
@@ -835,14 +835,14 @@ img {
 	border-color: #0179cd;	
 }
 .btn-success{
-	background-color: #8ec448;
+	background-color: rgba(#c448a9, 0.9);
 	border-color: #74aa2e;
 }
 .btn-warning{
   background-color: #ffac0e;	
 }
 .btn-danger{
-	background-color: #b83932;
+	background-color: rgba(#c448a9, 0.9);
 	border-color: #9a1b14;
 }
 .btn-3d{
@@ -898,7 +898,7 @@ img {
 }
 /* 7.1 Header Top Bar */
 .header-top-bar {
-	background-color: #8ec448;
+	background-color: rgba(#c448a9, 0.9);
 	color: #fff;
 	margin: 0;
 	padding: 7px 0;
@@ -950,14 +950,14 @@ img {
 /* Header Top Bar Stylish */
 .topbar-stylish {
 	background: transparent none repeat scroll 0 0;
-	border-top: 20px solid #8ec448;
+	border-top: 20px solid rgba(#c448a9, 0.9);
 	height: 50px;
 	padding: 0;
 	position: relative;
 	width: 100%;
 }
 .topbar-stylish-inner {
-	background-color: #8ec448;
+	background-color: rgba(#c448a9, 0.9);
 	border-radius: 0 0 40px 40px;
 	display: block;
 	height: 48px;
@@ -1065,7 +1065,7 @@ img {
 .main-menu li ul > li:hover > a,
 .main-menu li ul li.has-child:hover > a::after,
 .main-menu > li a.active {
-    color: #8ec448;
+    color: rgba(#c448a9, 0.9);
 }
 .dropdown, .sub-dropdown {
 	background-color: #ffffff;
@@ -1171,7 +1171,7 @@ li.has-child > a::after {
 	text-transform: uppercase;
 }
 .single-mega-item li.menu-title::before {
-	background-color: #8ec448;
+	background-color: rgba(#c448a9, 0.9);
 	bottom: 0;
 	content: "";
 	height: 1px;
@@ -1201,7 +1201,7 @@ li.has-child > a::after {
 	background: #d83240 none repeat scroll 0 0;	
 }
 .ecommerce .single-mega-item li.menu-title::before {
-	background: #b83932 none repeat scroll 0 0;	
+	background: rgba(#c448a9, 0.9) none repeat scroll 0 0;	
 }
 .single-mega-item p {
 	line-height: 22px;
@@ -1245,7 +1245,7 @@ li.has-child > a::after {
 }
 .mega-menu-form .single-field > input:focus,
 .mega-menu-form .single-field > textarea:focus {
-    border: 1px solid #8ec448;
+    border: 1px solid rgba(#c448a9, 0.9);
 }
 .btn.menu-btn {
 	border: 1px solid #dddddd;
@@ -1257,8 +1257,8 @@ li.has-child > a::after {
 	padding: 0 15px;
 }
 .btn.menu-btn:hover {
-	background-color: #8ec448;
-	border: 1px solid #8ec448;
+	background-color: rgba(#c448a9, 0.9);
+	border: 1px solid rgba(#c448a9, 0.9);
 	color: #fff;
 }
 /* Search Box */
@@ -1292,7 +1292,7 @@ li.has-child > a::after {
 	transition: all 0.3s ease 0s;
 }
 .src-btn:hover{
-	color:#8ec448;
+	color:rgba(#c448a9, 0.9);
 }
 /* Sticky */
 .sticky {
@@ -1539,7 +1539,7 @@ li.has-child > a::after {
  .header-style-4 .main-menu li ul > li:hover > a,
  .header-style-4 .main-menu li ul li.has-child:hover > a::after,
  .header-style-4 .main-menu > li a.active {
-    color: #b83932;
+    color: rgba(#c448a9, 0.9);
 }
 /* Right Carts */
 .top-right-menu {
@@ -1578,10 +1578,10 @@ li.has-child > a::after {
 }
 .top-right-menu > ul > li:hover > span > i,
 .top-right-menu > ul > li:hover > a > i{
-	color:#b83932;
+	color:rgba(#c448a9, 0.9);
 }
 .top-right-menu ul li.shiping-cart .item-no {
-	background: #b83932 none repeat scroll 0 0;
+	background: rgba(#c448a9, 0.9) none repeat scroll 0 0;
 	border-radius: 10px;
 	display: block;
 	font-size: 8px;
@@ -1622,7 +1622,7 @@ li.has-child > a::after {
 	width: 320px;
 }
 .cart-items-container .cart-buttons .btn, .search-box-inner .submit {
-	background: #b83932 none repeat scroll 0 0;
+	background: rgba(#c448a9, 0.9) none repeat scroll 0 0;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 3px;
 	color: #fafafa;
@@ -1852,7 +1852,7 @@ li.has-child > a::after {
 	padding: 0;
 }
 .breadcrumbs > li {
-	color: #8ec448;
+	color: rgba(#c448a9, 0.9);
 	display: inline-block;
 	font-size: 16px;
 	padding: 0 8px;
@@ -1874,7 +1874,7 @@ li.has-child > a::after {
 }
 /* Corporate Page Banner */
 .corporate .breadcrumbs > li.active{
-	color:#8ec448;
+	color:rgba(#c448a9, 0.9);
 }
 /* Construction Page Banner */
 .construction .banner-content,
