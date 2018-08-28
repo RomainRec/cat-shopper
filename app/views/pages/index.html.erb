@@ -1,20 +1,1562 @@
-<ul>
-  <% if user_signed_in? %>
-  <li>
-    <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-  </li>
-  <% else %>
-  <li>
-    <%= link_to 'sign in', new_user_session_path %>
-  </li>
-  <li>
-    <%= link_to "sign up", new_user_registration_path %>
-  </li>
-  <% end %>
-</ul>
 
 
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Unify || Unify Multipurpose HTML5 Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="assets/images/img/favicon.ico" >
+		<!-- All CSS Here -->
+		<!-- Bootstrap fremwork main css -->
+        <link rel="stylesheet" href="assets/assets/css/bootstrap.min.css">
+		<!-- Animate CSS -->
+		<link rel="stylesheet" href="assets/css/animate.css">
+        <!-- This theme-plugins.css file contents all plugings CSS file. -->
+		<link rel="stylesheet" href="assets/css/theme-plugins.css">
+		<!-- Theme shortcodes/elements style -->
+		<link rel="stylesheet" href="assets/css/shortcodes/shortcodes.css">
+        <!-- Theme main style -->
+		<link rel="stylesheet" href="style.css">
+		<!-- Responsive CSS -->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+		<!-- User style -->
+		<link rel="stylesheet" href="assets/css/custom.css">
 
-
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+		<!-- Modernizr js -->
+        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body class="corporate">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+	<div class="wrapper">
+        <!-- Start Header -->
+        <header id="header-area">
+		    <!-- Start Header Area -->
+		    <div class="header-area">
+                <!-- Start Header Navigation Area -->
+				<div id="sticky-primary" class="header-navigation-area">
+					<!-- Start Header Navigation -->
+					<div class="header-navigation header-semi-transparent">
+						<div class="container">
+						    <!-- Start Main Menu Wrapper -->
+						    <div class="main-menu-wrap">
+								<div class="row">
+									<div class="col-xs-6 col-sm-4 col-md-2">
+										<!-- Start Logo -->
+										<div class="logo sticky-logo">
+											<a href="index.html"><img src="assets/images/img/logo.png" alt="" /></a>
+										</div>
+										<!-- End Logo -->
+									</div>
+									<div class="hidden-xs hidden-sm col-md-8">
+										<!-- Start Primary Menu -->
+										<nav id="primary-menu">
+											<ul class="main-menu">
+												<li><a class="active" href="index.html">Home</a>
+													<!-- Start Dropdown -->
+													<ul class="dropdown">
+														<li class="has-child"><a class="active" href="#">Corporate</a>
+															<!-- Start Sub Dropdown -->
+															<ul class="sub-dropdown">
+																<li><a class="active" href="index.html">Corporate Default</a></li>
+																<li><a href="index-home-parallax.html">Corporate Parallax</a></li>
+															</ul>
+														</li>
+														<li class="has-child"><a href="construction-home.html" target="_blank">Construciton</a>
+															<!-- Start Sub Dropdown -->
+															<ul class="sub-dropdown">
+																<li><a href="construction-home.html" target="_blank">Construciton Default</a></li>
+																<li><a href="construction-home-parallax.html" target="_blank">Construciton Parallax</a></li>
+															</ul>
+															<!-- End Sub Dropdown -->
+														</li>
+														<li class="has-child"><a href="ecommerce-home.html" target="_blank">Ecommerce</a>
+															<!-- Start Sub Dropdown -->
+															<ul class="sub-dropdown">
+																<li><a href="ecommerce-home.html" target="_blank">Ecommerce Default</a></li>
+																<li><a href="ecommerce-home-parallax.html" target="_blank">Ecommerce Parallax</a></li>
+															</ul>
+															<!-- End Sub Dropdown -->
+														</li>
+														<li class="has-child"><a href="medical-home.html" target="_blank">Medical</a>
+															<!-- Start Sub Dropdown -->
+															<ul class="sub-dropdown">
+																<li><a href="medical-home.html" target="_blank">Medical Default</a></li>
+																<li><a href="medical-home-parallax.html" target="_blank">Medical Parallax</a></li>
+															</ul>
+															<!-- End Sub Dropdown -->
+														</li>
+														<li class="has-child"><a href="resturant-home.html" target="_blank">Resturant</a>
+															<!-- Start Sub Dropdown -->
+															<ul class="sub-dropdown">
+																<li><a href="resturant-home.html" target="_blank">Resturant Default</a></li>
+																<li><a href="resturant-home-parallax.html" target="_blank">Resturant Parallax</a></li>
+															</ul>
+															<!-- End Sub Dropdown -->
+														</li>
+														<li class="has-child"><a href="travel-home.html" target="_blank">Travel</a>
+															<!-- Start Sub Dropdown -->
+															<ul class="sub-dropdown">
+																<li><a href="travel-home.html" target="_blank">Travel Default</a></li>
+																<li><a href="travel-home-parallax.html" target="_blank">Travel Parallax</a></li>
+															</ul>
+															<!-- End Sub Dropdown -->
+														</li>
+													</ul>
+													<!-- End Dropdown -->
+												</li>
+												<li><a href="#">Pages</a>
+													<!-- Start Dropdown -->
+													<ul class="dropdown">
+														<li><a href="about-us.html">About Us</a></li>
+														<li><a href="services.html">Services</a></li>
+														<li class="has-child"><a href="#">Portfolios</a>
+															<!-- Start Sub Dropdown -->
+															<ul class="sub-dropdown">
+																<li><a href="portfolios-3-cols.html">Portfolios 3 Columns</a></li>
+																<li><a href="portfolios-4-cols.html">Portfolios 4 Columns</a></li>
+															</ul>
+															<!-- End Sub Dropdown -->
+														</li>
+														<li><a href="team.html">Team</a></li>
+														<li><a href="coming-soon.html">Comming Soon</a></li>
+														<li><a href="404.html">404 Page</a></li>
+													</ul>
+													<!-- End Dropdown -->
+												</li>
+												<li><a href="#">Features</a>
+													<!-- Start Dropdown -->
+													<ul class="dropdown">
+														<li class="has-child"><a href="#">Header</a>
+															<!-- Start Sub Dropdown -->
+															<ul class="sub-dropdown">
+																<li><a href="index-header-default.html">Header Default</a></li>
+																<li><a href="index-header-flat.html">Header Flat</a></li>
+																<li><a href="index-header-flat-top-bar.html">Header Topbar</a></li>
+																<li><a href="index-header-flat-top-bar-clasic.html">Header Topbar Clasic</a></li>
+																<li><a href="index-header-flat-top-bar-language.html">Header Topbar With Language</a></li>
+																<li><a href="index-header-flat-top-bar-search.html">Header With Search Option</a></li>
+															</ul>
+															<!-- End Sub Dropdown -->
+														</li>
+														<li class="has-child"><a href="#">Page Header</a>
+															<!-- Start Sub Dropdown -->
+															<ul class="sub-dropdown">
+																<li><a href="index-page-header-default.html">Page Header Default</a></li>
+																<li><a href="index-page-header-custom-background.html">Page Header width Custom Background</a></li>
+																<li><a href="index-page-header-light.html">Page Header Light</a></li>
+																<li><a href="index-page-header-text-left.html">Page Header Left Text</a></li>
+															</ul>
+															<!-- End Sub Dropdown -->
+														</li>
+														<li><a href="shortcode-post-video.html">Video Posts</a></li>
+														<li><a href="shortcode-post-audio.html">Audio Posts</a></li>
+														<li><a href="shortcode-post-gallery.html">Gallary Posts</a></li>
+														<li class="has-child"><a href="#">Footer</a>
+															<!-- Start Sub Dropdown -->
+															<ul class="sub-dropdown">
+																<li><a href="index-footer-default.html">Footer Default</a></li>
+																<li><a href="index-footer-image-bg-parallax.html">Footer Parallax Image</a></li>
+																<li><a href="index-footer-light-dark.html">Footer Light Dark</a></li>
+																<li><a href="index-footer-secondary-color.html">Footer Secondary Color</a></li>
+																<li><a href="index-footer-center-logo.html">Footer Centered Logo</a></li>
+																<li><a href="index-footer-center-logo-image-bg.html">Footer Centered Logo with image background</a></li>
+															</ul>
+															<!-- End Sub Dropdown -->
+														</li>
+													</ul>
+													<!-- Start Dropdown -->
+												</li>
+												<li class="mega-parent"><a href="#">Shortcodes</a>
+													<!-- Start Mega Menu -->
+													<div class="mega-menu-area mega-full-width">
+														<!-- Start Single Mega Item -->
+														<ul class="single-mega-item width-one-fourth">
+															<li class="menu-title">Shortcodes-01</li>
+															<li><a href="shortcode-accordions.html"><i class="fa fa-bars" aria-hidden="true"></i> Accordions</a></li>
+															<li><a href="shortcode-alarts.html"><i class="fa fa-times" aria-hidden="true"></i> Alarts</a></li>
+															<li><a href="shortcode-blockquotes.html"><i class="fa fa-quote-left" aria-hidden="true"></i> Blockquotes</a></li>
+															<li><a href="shortcode-buttons.html"><i class="fa fa-download" aria-hidden="true"></i> Buttons</a></li>
+															<li><a href="shortcode-call-to-action.html"><i class="fa fa-mobile" aria-hidden="true"></i> Call to Action</a></li>
+															<li><a href="shortcode-carousels.html"><i class="fa fa-exchange" aria-hidden="true"></i> Carousels</a></li>
+															<li><a href="shortcode-clients-logo.html"><i class="fa fa-leaf" aria-hidden="true"></i> client logos</a></li>
+														</ul>
+														<!-- End Single Mega Item -->
+														<!-- Start Single Mega Item -->
+														<ul class="single-mega-item width-one-fourth">
+															<li class="menu-title">Shortcodes-02</li>
+															<li><a href="shortcode-gallery.html"><i class="fa fa-eye" aria-hidden="true"></i> Gallery</a></li>
+															<li><a href="shortcode-icons.html"><i class="fa fa-flag" aria-hidden="true"></i> Icons</a></li>
+															<li><a href="shortcode-lists.html"><i class="fa fa-check" aria-hidden="true"></i> Lists</a></li>
+															<li><a href="shortcode-maps.html"><i class="fa fa-map-marker" aria-hidden="true"></i> Google Maps</a></li>
+															<li><a href="shortcode-modals.html"><i class="fa fa-search-plus" aria-hidden="true"></i> Modals</a></li>
+															<li><a href="shortcode-pagination.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Pagination</a></li>
+															<li><a href="shortcode-panels.html"><i class="fa fa-arrow-right" aria-hidden="true"></i> Panels</a></li>
+														</ul>
+														<!-- End Single Mega Item -->
+														<!-- Start Single Mega Item -->
+														<ul class="single-mega-item width-one-fourth">
+															<li class="menu-title">Shortcodes-03</li>
+															<li><a href="shortcode-pies.html"><i class="fa fa-circle-o-notch" aria-hidden="true"></i> Pies</a></li>
+															<li><a href="shortcode-post-audio.html"><i class="fa fa-music" aria-hidden="true"></i> Audio Posts</a></li>
+															<li><a href="shortcode-post-gallery.html"><i class="fa fa-picture-o" aria-hidden="true"></i> Gallary Posts</a></li>
+															<li><a href="shortcode-post-video.html"><i class="fa fa-video-camera" aria-hidden="true"></i> Video Posts</a></li>
+															<li><a href="shortcode-pricing-tables.html"><i class="fa fa-usd" aria-hidden="true"></i> Pricing Tables</a></li>
+															<li><a href="shortcode-progress.html"><i class="fa fa-wifi" aria-hidden="true"></i> Progress</a></li>
+															<li><a href="shortcodes-labels.html"><i class="fa fa-linux" aria-hidden="true"></i> Labels</a></li>
+														</ul>
+														<!-- End Single Mega Item -->
+														<!-- Start Single Mega Item -->
+														<ul class="single-mega-item width-one-fourth">
+															<li class="menu-title">Shortcodes-04</li>
+															<li><a href="shortcode-social-buttons.html"><i class="fa fa-twitter" aria-hidden="true"></i> Social Button</a></li>
+															<li><a href="shortcode-table.html"><i class="fa fa-minus-square-o" aria-hidden="true"></i> Table</a></li>
+															<li><a href="shortcode-tabs.html"><i class="fa fa-server" aria-hidden="true"></i> Tabs</a></li>
+															<li><a href="shortcode-testimonials.html"><i class="fa fa-sliders" aria-hidden="true"></i> Testimonials</a></li>
+															<li><a href="shortcode-tooltips-popovers.html"><i class="fa fa-hospital-o" aria-hidden="true"></i> Tooltips Popovers</a></li>
+															<li><a href="shortcode-team.html"><i class="fa fa-user" aria-hidden="true"></i> Team</a></li>
+														</ul>
+														<!-- End Single Mega Item -->
+													</div>
+													<!-- End Mega Menu -->
+												</li>
+												<li><a href="#">Blog</a>
+													<!-- Start Mega Menu -->
+													<div class="mega-menu-area mega-small-width mega-center">
+														 <!-- Start Single Mega Item -->
+														<ul class="single-mega-item width-one-half">
+															<li class="menu-title">Blog Version 1</li>
+															<li><a href="blog-v1-full-witdth.html">Blog Fulwidth</a></li>
+															<li><a href="blog-v1-col-2-left-sidebar.html">Two Columns Left Sidebar</a></li>
+															<li><a href="blog-v1-col-2-right-sidebar.html">Two Columns Right Sidebar</a></li>
+															<li><a href="blog-v1-col-3.html">Three Columns</a></li>
+														</ul>
+														<!-- End Single Mega Item -->
+														<!-- Start Single Mega Item -->
+														<ul class="single-mega-item width-one-half">
+															<li class="menu-title">Blog Version 2</li>
+															<li><a href="blog-v2-full-width.html">Blog Fulwidth</a></li>
+															<li><a href="blog-v2-col-2-left-sidebar.html">Two Columns Left Sidebar</a></li>
+															<li><a href="blog-v2-col-2-right-sidebar.html">Two Columns Right Sidebar</a></li>
+															<li><a href="blog-v2-col-3.html">Three Columns</a></li>
+														</ul>
+														<!-- End Single Mega Item -->
+													</div>
+													<!-- End Mega Menu -->
+												</li>
+												<li class="mega-parent"><a href="#">MegaMenu</a>
+													<!-- Start Mega Menu -->
+													<div class="mega-menu-area mega-full-width">
+														<!-- Start Single Mega Item -->
+														<ul class="single-mega-item width-one-third">
+														    <li class="menu-title">Product One</li>
+														    <li><a href="#"> <img src="assets/images/img/menu/1.png" alt="image 1"> </a> <p><strong>Product Title</strong></p></li>
+														    <li><p>Lorem Ipsum is simply dummy text of the priing and typesetting industry.</p></li>
+														</ul>
+														<!-- End Single Mega Item -->
+														<!-- Start Single Mega Item -->
+														<ul class="single-mega-item width-one-third">
+														   <li class="menu-title">Product Two</li>
+															<li><a href="#"> <img src="assets/images/img/menu/1.png" alt="image 1"> </a> <p><strong>Product Title</strong></p> </li>
+														   <li><p>Lorem Ipsum has been the industry's standard dummy text ever since.</p></li>
+														</ul>
+														<!-- End Single Mega Item -->
+														<!-- Start Single Mega Item -->
+														<ul class="single-mega-item width-one-third">
+														   <li class="menu-title">Product Three</li>
+															<li><a href="#"><img src="assets/images/img/menu/1.png" alt="image 1"></a><p><strong>Product Title</strong></p></li>
+															<li><p>Lorem Ipsum is simply dummy text of the priing and typesetting industry. Lorem Ipsum has been t he industry's standard dummy text ever since.</p></li>
+														</ul>
+														<!-- Start Single Mega Item -->
+													</div>
+													<!-- End Mega Menu -->
+												</li>
+												<li class="mega-parent"><a href="contact.html">Contact</a>
+													<!-- Start Mega Menu -->
+													<div class="mega-menu-area">
+														 <!-- Start Single Mega Item -->
+														<ul class="single-mega-item width-one-half">
+															<li class="menu-title">Quick Contact</li>
+															<li>
+																<!-- Start Form -->
+																<form action="#" class="mega-menu-form">
+																	<div class="single-field">
+																		<input type="text" name="name" placeholder="Your name">
+																	</div><!-- End Single Field -->
+																	<div class="single-field">
+																		<input type="text" name="email" placeholder="Your email">
+																	</div><!-- End Single Field -->
+																	<div class="single-field">
+																		<input type="text" name="subject" placeholder="Subject">
+																	</div><!-- End Single Field -->
+																	<div class="single-field">
+																		<textarea name="message" rows="5" placeholder="Type your message"></textarea>
+																	</div><!-- End Single Field -->
+																	<div class="single-field">
+																		<a class="btn menu-btn">Send Message</a>
+																	</div>
+																</form>
+																<!-- End Form -->
+															</li>
+														</ul>
+														<!-- End Single Mega Item -->
+														<!-- Start Single Mega Item -->
+														<ul class="single-mega-item width-one-half">
+														   <li class="menu-title">About Us</li>
+														   <li><p>Lorem Ipsum is simply dummy text of the priing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the priing and typesetting industry. Lorem Ipsum has been t he industry's standard dummy text ever since.</p></li>
+															<li><a href="contact.html"><i class="icofont icofont-email"></i> Contact page</a></li>
+															<li><a href="#"><i class="icofont icofont-penguin-linux"></i> Company CEO</a></li>
+															<li><a href="#"><i class="icofont icofont-phone"></i> +123 4567 890</a></li>
+															<li><a href="#"><i class="icofont icofont-email"></i> example@mail.com</a></li>
+															<li><a href="#"><i class="icofont icofont-map"></i> Lorem Address, SO</a></li>
+														</ul>
+														<!-- End Single Mega Item -->
+													</div>
+													<!-- End Mega Menu -->
+												</li>
+											</ul>
+										</nav>
+										<!-- End Primary Menu -->
+									</div>
+									<div class="hidden-xs col-sm-4 col-sm-6 col-md-2">
+										<!-- Start Search Box -->
+										<div class="search-box-area trans-5">
+											<form action="#" class="search-box">
+												<input class="single-input" placeholder="Search...." type="text">
+												<button class="src-btn"><i class="fa fa-search"></i></button>
+											</form>
+										</div>
+										 <!-- End Search Box -->
+									</div>
+								</div>
+							</div>
+                            <!-- End Main Menu Wrapper -->
+							<!-- Start Mobile Menu Area -->
+							<div class="mobile-menu-area hidden-lg hidden-md">
+								<div class="row">
+									<div class="col-xs-12 active-mobile-menu">
+										<nav id="mobile-menu">
+											<ul>
+												<li><a class="active" href="index.html">Home</a>
+													<!-- Start Dropdown -->
+													<ul>
+														<li><a href="index.html">Corporate</a>
+															<!-- Start Sub Dropdown -->
+															<ul>
+																<li><a href="index.html">Corporate Default</a></li>
+																<li><a href="index-home-parallax.html">Corporate Parallax</a></li>
+															</ul>
+														</li>
+														<li><a href="construction-home.html" target="_blank">Construciton</a>
+															<!-- Start Sub Dropdown -->
+															<ul>
+																<li><a href="construction-home.html" target="_blank">Construciton Default</a></li>
+																<li><a href="construction-home-parallax.html" target="_blank">Construciton Parallax</a></li>
+															</ul>
+															<!-- End Sub Dropdown -->
+														</li>
+														<li><a href="ecommerce-home.html" target="_blank">Ecommerce</a>
+															<!-- Start Sub Dropdown -->
+															<ul>
+																<li><a href="ecommerce-home.html" target="_blank">Ecommerce Default</a></li>
+																<li><a href="ecommerce-home-parallax.html" target="_blank">Ecommerce Parallax</a></li>
+															</ul>
+															<!-- End Sub Dropdown -->
+														</li>
+														<li><a href="medical-home.html" target="_blank">Medical</a>
+															<!-- Start Sub Dropdown -->
+															<ul>
+																<li><a href="medical-home.html" target="_blank">Medical Default</a></li>
+																<li><a href="medical-home-parallax.html" target="_blank">Medical Parallax</a></li>
+															</ul>
+															<!-- End Sub Dropdown -->
+														</li>
+														<li><a href="resturant-home.html" target="_blank">Resturant</a>
+															<!-- Start Sub Dropdown -->
+															<ul>
+																<li><a href="resturant-home.html" target="_blank">Resturant Default</a></li>
+																<li><a href="resturant-home-parallax.html" target="_blank">Resturant Parallax</a></li>
+															</ul>
+															<!-- End Sub Dropdown -->
+														</li>
+														<li><a href="travel-home.html" target="_blank">Travel</a>
+															<!-- Start Sub Dropdown -->
+															<ul>
+																<li><a href="travel-home.html" target="_blank">Travel Default</a></li>
+																<li><a href="travel-home-parallax.html" target="_blank">Travel Parallax</a></li>
+															</ul>
+															<!-- End Sub Dropdown -->
+														</li>
+													</ul>
+													<!-- End Dropdown -->
+												</li>
+												<li><a href="#">Pages</a>
+													<!-- Start Dropdown -->
+													<ul>
+														<li><a href="about-us.html">About Us</a></li>
+														<li><a href="services.html">Services</a></li>
+														<li><a href="team.html">Team</a></li>
+														<li><a href="coming-soon.html">Comming Soon</a></li>
+														<li><a href="404.html">404 Page</a></li>
+													</ul>
+													<!-- End Dropdown -->
+												</li>
+												<li><a href="#">Features</a>
+													<!-- Start Dropdown -->
+													<ul>
+														<li><a href="#">Header</a>
+															<!-- Start Sub Dropdown -->
+															<ul>
+																<li><a href="index-header-default.html">Header Default</a></li>
+																<li><a href="index-header-flat.html">Header Flat</a></li>
+																<li><a href="index-header-flat-top-bar.html">Header Topbar</a></li>
+																<li><a href="index-header-flat-top-bar-clasic.html">Header Topbar Clasic</a></li>
+																<li><a href="index-header-flat-top-bar-language.html">Header Topbar With Language</a></li>
+																<li><a href="index-header-flat-top-bar-search.html">Header With Search Option</a></li>
+															</ul>
+															<!-- End Sub Dropdown -->
+														</li>
+														<li><a href="#">Page Header</a>
+															<!-- Start Sub Dropdown -->
+															<ul>
+																<li><a href="index-page-header-default.html">Page Header Default</a></li>
+																<li><a href="index-page-header-custom-background.html">Page Header width Custom Background</a></li>
+																<li><a href="index-page-header-light.html">Page Header Light</a></li>
+																<li><a href="index-page-header-text-left.html">Page Header Left Text</a></li>
+															</ul>
+															<!-- End Sub Dropdown -->
+														</li>
+														<li><a href="shortcode-post-video.html">Video Posts</a></li>
+														<li><a href="shortcode-post-audio.html">Audio Posts</a></li>
+														<li><a href="shortcode-post-gallery.html">Gallary Posts</a></li>
+														<li><a href="#">Footer</a>
+															<!-- Start Sub Dropdown -->
+															<ul>
+																<li><a href="index-footer-default.html">Footer Default</a></li>
+																<li><a href="index-footer-image-bg-parallax.html">Footer Parallax Image</a></li>
+																<li><a href="index-footer-light-dark.html">Footer Light Dark</a></li>
+																<li><a href="index-footer-secondary-color.html">Footer Secondary Color</a></li>
+																<li><a href="index-footer-center-logo.html">Footer Centered Logo</a></li>
+																<li><a href="index-footer-center-logo-image-bg.html">Footer Centered Logo with image background</a></li>
+															</ul>
+															<!-- End Sub Dropdown -->
+														</li>
+													</ul>
+													<!-- Start Dropdown -->
+												</li>
+												<li><a href="#">Blog</a>
+													<!-- Start Single Mega Item -->
+													<ul>
+														<li><a href="blog-v1-full-witdth.html">Blog-1 Fulwidth</a></li>
+														<li><a href="blog-v1-col-2-left-sidebar.html">Blog-1 Two Columns Left Sidebar</a></li>
+														<li><a href="blog-v1-col-2-right-sidebar.html">Blog-1 Two Columns Right Sidebar</a></li>
+														<li><a href="blog-v1-col-3.html">Blog-1 Three Columns</a></li>
+														<li><a href="blog-v2-full-width.html">Blog-2 Blog Fulwidth</a></li>
+														<li><a href="blog-v2-col-2-left-sidebar.html">Blog-2 Two Columns Left Sidebar</a></li>
+														<li><a href="blog-v2-col-2-right-sidebar.html">Blog-2 Two Columns Right Sidebar</a></li>
+														<li><a href="blog-v2-col-3.html">Blog-2 Three Columns</a></li>
+													</ul>
+													<!-- End Single Mega Item -->
+												</li>
+												<li><a href="contact.html">Contact</a></li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+							<!-- End Mobile Menu Area -->
+						</div>
+					</div>
+					<!-- End Header Navigation -->
+				</div>
+				<!-- End Header Navigation Area -->
+			</div>
+			<!-- End Header Area -->
+        </header>
+		<!-- End Header -->
+		<!-- Start Slider Area-->
+		<section id="slider-container">
+		    <div class="unify-owl-slider">
+				<!-- Start Slingle Slide -->
+				<div class="single-slide">
+					<!-- Start Slider Image -->
+					<a href="#"><img src="assets/img/slider/corporate/1.jpg" alt="" /></a>
+					<!-- End Slider Image -->
+					<!-- Start Slider Content -->
+					<div class="slider-content-area">
+						<div class="slider-content dis-table">
+							<div class="dis-table-cell text-center">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="slide-content">
+												<h3>Only Best Choice</h3>
+												<h1>Of Your Success</h1>
+												<p>Lorem Ipsum is simply dummy text of the printing <br />and typesetting industry. Lorem Ipsum</p>
+												<a href="#" class="btn btn-cor btn-borders">Purchase <i class="fa fa-download" aria-hidden="true"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Start Slider Content -->
+				</div>
+				<!-- End Slingle Slide -->
+				<!-- Start Slingle Slide -->
+				<div class="single-slide">
+					<!-- Start Slider Image -->
+					<a href="#"><img src="assets/img/slider/corporate/2.jpg" alt="" /></a>
+					<!-- End Slider Image -->
+					<!-- Start Slider Content -->
+					<div class="slider-content-area">
+						<div class="slider-content dis-table">
+							<div class="dis-table-cell text-center">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="slide-content">
+												<h3>Only Best Choice</h3>
+												<h1>Of Your Success</h1>
+												<p>Lorem Ipsum is simply dummy text of the printing <br />and typesetting industry. Lorem Ipsum</p>
+												<a href="#" class="btn btn-cor btn-borders">View More</a>
+												<a href="#" class="btn btn-cor">Purchase <i class="fa fa-download" aria-hidden="true"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Start Slider Content -->
+				</div>
+				<!-- End Slingle Slide -->
+				<!-- Start Slingle Slide -->
+				<div class="single-slide">
+					<!-- Start Slider Image -->
+					<a href="#"><img src="assets/img/slider/corporate/3.jpg" alt="" /></a>
+					<!-- End Slider Image -->
+					<!-- Start Slider Content -->
+					<div class="slider-content-area">
+						<div class="slider-content dis-table">
+							<div class="dis-table-cell text-center">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="slide-content">
+												<h3>Only Best Choice</h3>
+												<h1>Of Your Success</h1>
+												<p>Lorem Ipsum is simply dummy text of the printing <br />and typesetting industry. Lorem Ipsum</p>
+												<a href="#" class="btn btn-cor">Purchase <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Start Slider Content -->
+				</div>
+				<!-- End Slingle Slide -->
+		    </div>
+		</section>
+		<!-- End Slider Area -->
+		<!-- Start Service Area -->
+		<section class="service-area pt-100 pb-30">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-12">
+						<!-- Start Section Title -->
+						<div class="section-title">
+						   <h2>Our Services</h2>
+						   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+						</div>
+						<!-- End Section Title -->
+					</div>
+				</div>
+				<div class="row pt-25">
+					<div class="col-xm-12 col-sm-6 col-md-4">
+						<!-- start service item -->
+						<div class="service-item mb-60">
+							<i class="icofont icofont-vector-path"></i>
+							<h6>Graphic Design</h6>
+							<p>Lorem Ipsum is simply dummy text of the priing and typesetting industry. Lorem Ipsum has been t he industry's standard dummy text ever since. </p>
+						</div>
+						<!-- End service item -->
+					</div>
+					<div class="col-xm-12 col-sm-6 col-md-4">
+						<!-- start service item -->
+						<div class="service-item mb-60">
+							<i class="icofont icofont-code"></i>
+							<h6>Web Design</h6>
+							<p>Lorem Ipsum is simply dummy text of the priing and typesetting industry. Lorem Ipsum has been t he industry's standard dummy text ever since. </p>
+						</div>
+						<!-- End service item -->
+					</div>
+					<div class="col-xm-12 col-sm-6 col-md-4">
+						<!-- start service item -->
+						<div class="service-item mb-60">
+							<i class="icofont icofont-gears"></i>
+							<h6>Web Development</h6>
+							<p>Lorem Ipsum is simply dummy text of the priing and typesetting industry. Lorem Ipsum has been t he industry's standard dummy text ever since. </p>
+						</div>
+						<!-- End service item -->
+					</div>
+					<div class="col-xm-12 col-sm-6 col-md-4">
+						<!-- start service item -->
+						<div class="service-item mb-60">
+							<i class="icofont icofont-binoculars"></i>
+							<h6>Brand Identity</h6>
+							<p>Lorem Ipsum is simply dummy text of the priing and typesetting industry. Lorem Ipsum has been t he industry's standard dummy text ever since. </p>
+						</div>
+						<!-- End service item -->
+					</div>
+					<div class="col-xm-12 col-sm-6 col-md-4">
+						<!-- start service item -->
+						<div class="service-item mb-60">
+							<i class="icofont icofont-responsive"></i>
+							<h6>Responsive Design</h6>
+							<p>Lorem Ipsum is simply dummy text of the priing and typesetting industry. Lorem Ipsum has been t he industry's standard dummy text ever since. </p>
+						</div>
+						<!-- End service item -->
+					</div>
+					<div class="col-xm-12 col-sm-6 col-md-4">
+						<!-- start service item -->
+						<div class="service-item mb-60">
+							<i class="icofont icofont-chart-histogram"></i>
+							<h6>Investment Analysis</h6>
+							<p>Lorem Ipsum is simply dummy text of the priing and typesetting industry. Lorem Ipsum has been t he industry's standard dummy text ever since. </p>
+						</div>
+						<!-- End service item -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Service Area -->
+        <!-- Start Works Area -->
+		<section class="works-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-12">
+						<!-- Start Section Title -->
+						<div class="section-title">
+						   <h2>Our Works</h2>
+						   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+						</div>
+						<!-- End Section Title -->
+					</div>
+				</div>
+                <div class="row">
+                   <div class="col-xs-12 col-sm-12 col-md-12">
+                        <ul class="filter-catagory-menu text-center">
+                            <li class="filter active" data-filter="all">All</li>
+                            <li class="filter" data-filter=".printing">Printing</li>
+                            <li class="filter" data-filter=".illustration">Illustration</li>
+                            <li class="filter" data-filter=".photography">Photography</li>
+                            <li class="filter" data-filter=".presentation">Presentation</li>
+                        </ul>
+                    </div>
+                    <div id="mix-fil" class="portfolio-items">
+                        <div class="col-xs-12 col-sm-6 col-md-4 mix photography illustration">
+						    <!-- Start Portfolio item -->
+                            <div class="portfolio-item">
+							    <!-- Start Portfolio Img -->
+                                <div class="portfolio-img">
+                                    <a href="#"><img src="assets/images/img/works/1.jpg" alt=""></a>
+                                </div>
+								<!-- End Portfolio Img -->
+								<!-- Start Portfolio Content -->
+                                <div class="portfolio-content">
+									<a href="#" class="ovrly-btns"><i class="icofont icofont-link"></i></a>
+									<h6><a href="#">Design Collective</a></h6>
+									<p>Branding / Presentation</p>
+                                </div>
+								<!-- End Portfolio Content -->
+                            </div>
+							<!-- End Portfolio item -->
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 mix printing presentation">
+						    <!-- Start Portfolio item -->
+                            <div class="portfolio-item">
+							    <!-- Start Portfolio Img -->
+                                <div class="portfolio-img">
+                                    <a href="#"><img src="assets/images/img/works/2.jpg" alt=""></a>
+                                </div>
+								<!-- End Portfolio Img -->
+								<!-- Start Portfolio Content -->
+                                <div class="portfolio-content">
+									<a href="#" class="ovrly-btns"><i class="icofont icofont-link"></i></a>
+									<h6><a href="#">Design Collective</a></h6>
+									<p>Branding / Presentation</p>
+                                </div>
+								<!-- End Portfolio Content -->
+                            </div>
+							<!-- End Portfolio item -->
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 mix illustration">
+						    <!-- Start Portfolio item -->
+                            <div class="portfolio-item">
+							    <!-- Start Portfolio Img -->
+                                <div class="portfolio-img">
+                                    <a href="#"><img src="assets/images/img/works/3.jpg" alt=""></a>
+                                </div>
+								<!-- End Portfolio Img -->
+								<!-- Start Portfolio Content -->
+                                <div class="portfolio-content">
+									<a href="#" class="ovrly-btns"><i class="icofont icofont-link"></i></a>
+									<h6><a href="#">Design Collective</a></h6>
+									<p>Branding / Presentation</p>
+                                </div>
+								<!-- End Portfolio Content -->
+                            </div>
+							<!-- End Portfolio item -->
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 mix printing">
+						    <!-- Start Portfolio item -->
+                            <div class="portfolio-item">
+							    <!-- Start Portfolio Img -->
+                                <div class="portfolio-img">
+                                    <a href="#"><img src="assets/images/img/works/4.jpg" alt=""></a>
+                                </div>
+								<!-- End Portfolio Img -->
+								<!-- Start Portfolio Content -->
+                                <div class="portfolio-content">
+									<a href="#" class="ovrly-btns"><i class="icofont icofont-link"></i></a>
+									<h6><a href="#">Design Collective</a></h6>
+									<p>Branding / Presentation</p>
+                                </div>
+								<!-- End Portfolio Content -->
+                            </div>
+							<!-- End Portfolio item -->
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 mix photography illustration photography">
+						    <!-- Start Portfolio item -->
+                            <div class="portfolio-item">
+							    <!-- Start Portfolio Img -->
+                                <div class="portfolio-img">
+                                    <a href="#"><img src="assets/images/img/works/5.jpg" alt=""></a>
+                                </div>
+								<!-- End Portfolio Img -->
+								<!-- Start Portfolio Content -->
+                                <div class="portfolio-content">
+									<a href="#" class="ovrly-btns"><i class="icofont icofont-link"></i></a>
+									<h6><a href="#">Design Collective</a></h6>
+									<p>Branding / Presentation</p>
+                                </div>
+								<!-- End Portfolio Content -->
+                            </div>
+							<!-- End Portfolio item -->
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 mix presentation printing">
+						    <!-- Start Portfolio item -->
+                            <div class="portfolio-item">
+							    <!-- Start Portfolio Img -->
+                                <div class="portfolio-img">
+                                    <a href="#"><img src="assets/images/img/works/6.jpg" alt=""></a>
+                                </div>
+								<!-- End Portfolio Img -->
+								<!-- Start Portfolio Content -->
+                                <div class="portfolio-content">
+									<a href="#" class="ovrly-btns"><i class="icofont icofont-link"></i></a>
+									<h6><a href="#">Design Collective</a></h6>
+									<p>Branding / Presentation</p>
+                                </div>
+								<!-- End Portfolio Content -->
+                            </div>
+							<!-- End Portfolio item -->
+                        </div>
+						<div class="col-md-12">
+						    <!-- Start Load More -->
+							<div class="loadmore-area">
+								<a href="#" class="btn btn-cor btn-borders btn-lg mt-20">load more <i class="fa fa-refresh ml-5" aria-hidden="true"></i></a>
+							</div>
+							<!-- End Load More -->
+						</div>
+                    </div>
+                </div>
+			</div>
+		</section>
+		<!-- End Works Area -->
+		<!-- Start About Area -->
+		<section class="about-area ptb-100">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6">
+					    <!-- Start About Left -->
+					    <div class="about-left mb-30">
+							<img src="assets/images/img/about/leader.jpg" alt="" />
+						</div>
+						<!-- End About Left -->
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-5 nopad-left nopad-right">
+						<div class="about-right text-center">
+							<!-- Start Section Title -->
+							<div class="section-title">
+							   <h2>About Unify</h2>
+							   <p>Know More About Us</p>
+							</div>
+							<!-- End Section Title -->
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type sbook. It has survived not only five centuries, but also the leap into electronic typesetting. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+							<a href="#" class="btn btn-cor btn-borders btn-lg mt-15">read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End About Area -->
+		<!-- Start Skill Area -->
+		<section class="skill-area gray-bg pt-40">
+		    <div class="container">
+		    	<div class="row">
+		    		<div class="col-xs-12 col-sm-12 col-md-6">
+						<!-- Start Section Title -->
+						<div class="section-title pt-40">
+						   <h2>Our skill</h2>
+						   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+						</div>
+						<!-- End Section Title -->
+                        <!-- Start Progress Items -->
+						<div class="progress-items">
+						    <!-- Start Progress Item -->
+							<div class="progress-item">
+								<div class="progess-heading">
+									<div class="progress-name">Graphic Design</div>
+									<div class="progress-value">55%</div>
+								</div>
+                                <div class="progress">
+                                    <div class="progress-bar wow fadeInLeft" style="width: 55%; visibility: visible; animation-duration: 2s; animation-delay: 1s; animation-name: fadeInLeft;" data-wow-duration="2s" data-wow-delay="1s">
+                                    </div>
+                                </div>
+                            </div>
+							 <!-- End Progress Item -->
+						    <!-- Start Progress Item -->
+							<div class="progress-item">
+								<div class="progess-heading">
+									<div class="progress-name">Web Design</div>
+									<div class="progress-value">87%</div>
+								</div>
+								<div class="progress">
+                                    <div class="progress-bar wow fadeInLeft" style="width: 87%; visibility: visible; animation-duration: 2s; animation-delay: 1s; animation-name: fadeInLeft;" data-wow-duration="2s" data-wow-delay="1s">
+                                    </div>
+								</div>
+                            </div>
+							 <!-- End Progress Item -->
+						    <!-- Start Progress Item -->
+							<div class="progress-item">
+								<div class="progess-heading">
+									<div class="progress-name">Photography</div>
+									<div class="progress-value">95%</div>
+								</div>
+								<div class="progress">
+                                    <div class="progress-bar wow fadeInLeft" style="width: 95%; visibility: visible; animation-duration: 2s; animation-delay: 1s; animation-name: fadeInLeft;" data-wow-duration="2s" data-wow-delay="1s">
+                                    </div>
+								</div>
+                            </div>
+							 <!-- End Progress Item -->
+							 <!-- Start Progress Item -->
+							<div class="progress-item">
+								<div class="progess-heading">
+									<div class="progress-name">Branding</div>
+									<div class="progress-value">70%</div>
+								</div>
+								<div class="progress">
+                                    <div class="progress-bar wow fadeInLeft" style="width: 70%; visibility: visible; animation-duration: 2s; animation-delay: 1s; animation-name: fadeInLeft;" data-wow-duration="2s" data-wow-delay="1s">
+                                    </div>
+								</div>
+                            </div>
+							 <!-- End Progress Item -->
+							 <!-- Start Progress Item -->
+							<div class="progress-item">
+								<div class="progess-heading">
+									<div class="progress-name">Social Media</div>
+									<div class="progress-value">55%</div>
+								</div>
+								<div class="progress">
+                                    <div class="progress-bar wow fadeInLeft" style="width: 55%; visibility: visible; animation-duration: 2s; animation-delay: 1s; animation-name: fadeInLeft;" data-wow-duration="2s" data-wow-delay="1s">
+                                    </div>
+								</div>
+                            </div>
+							 <!-- End Progress Item -->
+						</div>
+						<!-- End Progress Items -->
+					</div>
+					<div class="hidden-xs hidden-sm col-md-6">
+                       <div class="skill-man">
+					       <img src="assets/images/img/skill/skill-man.png" alt="" />
+					   </div>
+					</div>
+		    	</div>
+		    </div>
+		</section>
+        <!-- End Skill Area -->
+		<!-- Start Team Area -->
+		<section class="team-area pt-100 pb-60">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-12">
+						<!-- Start Section Title -->
+						<div class="section-title">
+						   <h2>Our crative team</h2>
+						   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+						</div>
+						<!-- End Section Title -->
+					</div>
+				</div>
+				<div class="row pt-30">
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<!-- Start Team Member -->
+						<div class="team-member text-center">
+							<a href="#"><img src="assets/images/img/team/1.png" alt="" /></a>
+							<!-- Start Member Hidden -->
+							<div class="member-hidden">
+								<div class="namerole">
+									<p class="member-name">Suman kumar saha</p>
+									<p class="member-role">Chairman</p>
+								</div>
+                                <!-- Start Social Links -->
+								<ul class="social-links">
+									<li><a href="#" class="facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="googleplus" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="behance" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+								</ul>
+								<!-- End Social Links -->
+							</div>
+							<!-- End Member Hidden -->
+							<div class="namerole member-bottom">
+								<p class="member-name">Suman kumar saha</p>
+								<p class="member-role">Chairman</p>
+							</div>
+						</div>
+						<!-- Start Team Member -->
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<!-- Start Team Member -->
+						<div class="team-member text-center">
+							<a href="#"><img src="assets/images/img/team/2.png" alt="" /></a>
+							<!-- Start Member Hidden -->
+							<div class="member-hidden">
+								<div class="namerole">
+								    <p class="member-name">Anamika Raj Anu</p>
+								    <p class="member-role">Team Leader</p>
+								</div>
+                                <!-- Start Social Links -->
+								<ul class="social-links">
+									<li><a href="#" class="facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="googleplus" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="behance" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+								</ul>
+								<!-- End Social Links -->
+							</div>
+							<!-- End Member Hidden -->
+							<div class="namerole member-bottom">
+								<p class="member-name">Anamika Raj Anu</p>
+								<p class="member-role">Team Leader</p>
+							</div>
+						</div>
+						<!-- Start Team Member -->
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<!-- Start Team Member -->
+						<div class="team-member text-center">
+							<a href="#"><img src="assets/images/img/team/3.png" alt="" /></a>
+							<!-- Start Member Hidden -->
+							<div class="member-hidden">
+								<div class="namerole">
+									<p class="member-name">Rafiq Shawon</p>
+									<p class="member-role">Manager</p>
+								</div>
+                                <!-- Start Social Links -->
+								<ul class="social-links">
+									<li><a href="#" class="facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="googleplus" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="behance" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+								</ul>
+								<!-- End Social Links -->
+							</div>
+							<!-- End Member Hidden -->
+							<div class="namerole member-bottom">
+								<p class="member-name">Rafiq Shawon</p>
+								<p class="member-role">Manager</p>
+							</div>
+						</div>
+						<!-- Start Team Member -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Team Area -->
+		<!-- Start Happy Client Area-->
+		<section class="clients-area overlay-bg ptb-80">
+            <div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-12">
+						<!-- Start Section Title -->
+						<div class="section-title white-heading">
+						   <h2>Our Happy Client</h2>
+						   <p>More than 100K happy customers with our services</p>
+						</div>
+						<!-- End Section Title -->
+					</div>
+				</div>
+				<div class="row">
+				    <!-- Start client Carousel -->
+					<div id="clients-carousel" class="carousel-control-1">
+						<div class="col-md-6">
+						    <!-- Start Single client -->
+							<div class="single-client">
+							    <!-- Start client Pic -->
+								<div class="client-pic">
+									<img src="assets/images/img/clients/1.png" alt="" />
+								</div>
+								<!-- End client Pic -->
+								<!-- Start client Content -->
+								<div class="client-content">
+									<div class="client">
+										<div class="client-info">
+											<h4>Kotha Chowdhury</h4>
+											<p>Managing Director</p>
+										</div>
+										<div class="client-say">
+											<p>Lorem Ipsum is simply dummy text of the printing andpsetting industry. Lorem Ipsum has been the industry's stadard dummy text koi jabi ever.</p>
+										</div>
+									</div>
+								</div>
+								<!-- End client Content -->
+							</div>
+							<!-- End Single client -->
+						</div>
+						<div class="col-md-6">
+						    <!-- Start Single client -->
+							<div class="single-client">
+							    <!-- Start client Pic -->
+								<div class="client-pic">
+									<img src="assets/images/img/clients/2.png" alt="" />
+								</div>
+								<!-- End client Pic -->
+								<!-- Start client Content -->
+								<div class="client-content">
+									<div class="client">
+										<div class="client-info">
+											<h4>Kotha Chowdhury</h4>
+											<p>Managing Director</p>
+										</div>
+										<div class="client-say">
+											<p>Lorem Ipsum is simply dummy text of the printing andpsetting industry. Lorem Ipsum has been the industry's stadard dummy text koi jabi ever.</p>
+										</div>
+									</div>
+								</div>
+								<!-- End client Content -->
+							</div>
+							<!-- End Single client -->
+						</div>
+						<div class="col-md-6">
+						    <!-- Start Single client -->
+							<div class="single-client">
+							    <!-- Start client Pic -->
+								<div class="client-pic">
+									<img src="assets/images/img/clients/1.png" alt="" />
+								</div>
+								<!-- End client Pic -->
+								<!-- Start client Content -->
+								<div class="client-content">
+									<div class="client">
+										<div class="client-info">
+											<h4>Kotha Chowdhury</h4>
+											<p>Managing Director</p>
+										</div>
+										<div class="client-say">
+											<p>Lorem Ipsum is simply dummy text of the printing andpsetting industry. Lorem Ipsum has been the industry's stadard dummy text koi jabi ever.</p>
+										</div>
+									</div>
+								</div>
+								<!-- End client Content -->
+							</div>
+							<!-- End Single client -->
+						</div>
+						<div class="col-md-6">
+						    <!-- Start Single client -->
+							<div class="single-client">
+							    <!-- Start client Pic -->
+								<div class="client-pic">
+									<img src="assets/images/img/clients/2.png" alt="" />
+								</div>
+								<!-- End client Pic -->
+								<!-- Start client Content -->
+								<div class="client-content">
+									<div class="client">
+										<div class="client-info">
+											<h4>Kotha Chowdhury</h4>
+											<p>Managing Director</p>
+										</div>
+										<div class="client-say">
+											<p>Lorem Ipsum is simply dummy text of the printing andpsetting industry. Lorem Ipsum has been the industry's stadard dummy text koi jabi ever.</p>
+										</div>
+									</div>
+								</div>
+								<!-- End client Content -->
+							</div>
+							<!-- End Single client -->
+						</div>
+					</div>
+					<!-- End client Carousel -->
+				</div>
+			</div>
+		</section>
+		<!-- End Happy Client Area -->
+		<!-- Start Blog Feed Area -->
+		<section class="blog-feed-area ptb-100">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-12">
+						<!-- Start Section Title -->
+						<div class="section-title">
+						    <h2>Our Blogs</h2>
+						    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+						<!-- End Section Title -->
+					</div>
+				</div>
+                <div class="row">
+				    <!-- Start Blog Feed Carousel -->
+					<div id="blog-feed-carousel" class="carousel-control-2">
+						<div class="col-md-6">
+							<!-- Start Single Feed -->
+							<div class="single-blog-feed">
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-6 nopad-right">
+										<!-- Start Post Thumb -->
+										<div class="blog-thumb have-overly">
+										   <a href=""><img src="assets/images/img/blog/corporate/1.png" alt="" /></a>
+										   <!-- Start Overly Content -->
+										   <div class="overly-content">
+												<!-- Start Social Links -->
+												<ul class="social-links text-center">
+													<li><a href="#" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+													<li><a href="#" target="_blank"><i class="icofont icofont-share"></i></a></li>
+												</ul>
+												<!-- End Social Links -->
+										   </div>
+										   <!-- End Overly Content -->
+										</div>
+										<!-- End Post Thumb -->
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-6">
+										<!-- Start Blog Meta -->
+										<div class="blog-meta">
+										<p><a href="#" class="author"><i class="fa fa-user" aria-hidden="true"></i> By Admin</a>
+										<a href="#" class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 24 july 2016</a></p>
+										</div>
+										<!-- End Blog Meta -->
+										<!-- Star Post Content Area -->
+										<div class="blog-content">
+											<h6 class="blog-post-heading"><a href="#">Improving design through typography</a></h6>
+											<div class="blog-content">
+												<p>Lorem Ipsum is simply dummy text of thiing and typesetting industry. Lorem Ipsum heen the industry's standard dummy.</p>
+												<a href="#" class="readmore">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Post Content Area -->
+									</div>
+								</div>
+							</div>
+							<!-- End Single Feed -->
+						</div>
+						<div class="col-md-6">
+							<!-- Start Single Feed -->
+							<div class="single-blog-feed">
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-6 nopad-right">
+										<!-- Start Post Thumb -->
+										<div class="blog-thumb have-overly">
+										   <a href=""><img src="assets/images/img/blog/corporate/2.png" alt="" /></a>
+										   <!-- Start Overly Content -->
+										   <div class="overly-content">
+												<!-- Start Social Links -->
+												<ul class="social-links text-center">
+													<li><a href="#" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+													<li><a href="#" target="_blank"><i class="icofont icofont-share"></i></a></li>
+												</ul>
+												<!-- End Social Links -->
+										   </div>
+										   <!-- End Overly Content -->
+										</div>
+										<!-- End Post Thumb -->
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-6">
+										<!-- Start Blog Meta -->
+										<div class="blog-meta">
+										<p><a href="#" class="author"><i class="fa fa-user" aria-hidden="true"></i> By Admin</a>
+										<a href="#" class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 24 july 2016</a></p>
+										</div>
+										<!-- End Blog Meta -->
+										<!-- Star Post Content Area -->
+										<div class="blog-content">
+											<h6 class="blog-post-heading"><a href="#">Improving design through typography</a></h6>
+											<div class="blog-content">
+												<p>Lorem Ipsum is simply dummy text of thiing and typesetting industry. Lorem Ipsum heen the industry's standard dummy.</p>
+												<a href="#" class="readmore">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Post Content Area -->
+									</div>
+								</div>
+							</div>
+							<!-- End Single Feed -->
+						</div>
+						<div class="col-md-6">
+							<!-- Start Single Feed -->
+							<div class="single-blog-feed">
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-6 nopad-right">
+										<!-- Start Post Thumb -->
+										<div class="blog-thumb have-overly">
+										   <a href=""><img src="assets/images/img/blog/corporate/1.png" alt="" /></a>
+										   <!-- Start Overly Content -->
+										   <div class="overly-content">
+												<!-- Start Social Links -->
+												<ul class="social-links text-center">
+													<li><a href="#" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+													<li><a href="#" target="_blank"><i class="icofont icofont-share"></i></a></li>
+												</ul>
+												<!-- End Social Links -->
+										   </div>
+										   <!-- End Overly Content -->
+										</div>
+										<!-- End Post Thumb -->
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-6">
+										<!-- Start Blog Meta -->
+										<div class="blog-meta">
+										<p><a href="#" class="author"><i class="fa fa-user" aria-hidden="true"></i> By Admin</a>
+										<a href="#" class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 24 july 2016</a></p>
+										</div>
+										<!-- End Blog Meta -->
+										<!-- Star Post Content Area -->
+										<div class="blog-content">
+											<h6 class="blog-post-heading"><a href="#">Improving design through typography</a></h6>
+											<div class="blog-content">
+												<p>Lorem Ipsum is simply dummy text of thiing and typesetting industry. Lorem Ipsum heen the industry's standard dummy.</p>
+												<a href="#" class="readmore">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Post Content Area -->
+									</div>
+								</div>
+							</div>
+							<!-- End Single Feed -->
+						</div>
+					</div>
+                    <!-- End Blog Feed Carousel -->
+				</div>
+			</div>
+		</section>
+		<!-- End Blog Feed Area -->
+		<!-- Start Partners Area -->
+		<section class="partners-area pb-100">
+		    <div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-12">
+						<!-- Start Section Title -->
+						<div class="section-title">
+						    <h2>Our Partners</h2>
+						    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+						<!-- End Section Title -->
+					</div>
+				</div>
+                <div class="row">
+				    <!-- Start Brand Logos -->
+				    <div id="brand-logos-carousel" class="carousel-control-flat">
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/1.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/2.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/3.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/4.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/1.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/2.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/3.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/4.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/1.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/2.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/3.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/4.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/1.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/2.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/3.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/4.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/1.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/2.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/3.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/4.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/1.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/2.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/3.png" alt=""></a></div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand"><a href="#"><img src="assets/images/img/brands/4.png" alt=""></a></div>
+						</div>
+					</div>
+					<!-- End Brand Logos -->
+				</div>
+			</div>
+		</section>
+		<!-- End Partners Area -->
+		<!-- Start Newsletter Area -->
+		<section class="newsletter-area overlay-bg ptb-80">
+		    <div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-12">
+						<!-- Start Section Title -->
+						<div class="section-title white-heading">
+						    <h2>Sign up for newsletter</h2>
+						    <p>Lorem Ipsum is simply dummy text of the printing and tying <br />industry. Lorem Ipsum has approved.</p>
+						</div>
+						<!-- End Section Title -->
+					</div>
+				</div>
+				<div class="row">
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
+						<!-- Start Subscribe Form -->
+						<form action="#" method="post" class="subscribe-form">
+						  <input type="email" name="email" class="subscribe-input" placeholder="Subscribe Here">
+						  <button type="submit" class="subscribe-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+						</form>
+						<!-- End Subscribe Form -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Newsletter Area -->
+		<!-- Start Footer Area -->
+		<footer class="footer-area pt-80">
+		    <!-- Start Footer Top Area  -->
+		    <div class="footer-top-area ptb-25">
+			    <div class="container">
+			    	<div class="row">
+			    		<div class="col-xs-12 col-sm-6 col-md-3">
+						    <!-- Start Footer widget -->
+						    <div class="footer-widget">
+							    <div class="footer-logo">
+								   <a href="#"><img src="assets/images/img/logo-footer.png" alt="" /></a>
+								</div>
+								<p>Lorem Ipsum is simply dummy text of thing do and typesetting industry.</p>
+								<!-- Start widget Info -->
+								<div class="widget-contact-info">
+								    <ul>
+								    	<li class="widget-phone">
+											<div class="widget-right-info">
+											    <span><a href="tel:+880123456789">+880 1234 56789</a></span>
+												<span><a href="tel:+880987654321">+880 9876 54321</a></span>
+											</div>
+										</li>
+								    	<li class="widget-email">
+											<div class="widget-right-info">
+											    <span><a href="mailto:help@adminunify.com">help@adminunify.com</a></span>
+												<span><a href="mailto:info@adminunify.com">info@adminunify.com</a></span>
+											</div>
+										</li>
+								    	<li class="widget-city">
+											<div class="widget-right-info">
+                                                <span>1234 Parkstreet, NY</span>
+											</div>
+										</li>
+								    </ul>
+								</div>
+								<!-- End widget Info -->
+							</div>
+							<!-- End Footer widget -->
+						</div>
+			    		<div class="col-xs-12 col-sm-6 col-md-3">
+						    <!-- Start Footer widget -->
+                            <div class="footer-widget widget-instagram-feed">
+								<h4 class="widget-title">Instagram Photos</h4>
+								<!-- Start Instagram Photos -->
+								<div class="inst-photo-container">
+									<ul class="inst-photos hover-efect">
+										<li><a href="#"><img src="assets/images/img/instagram/1.png" alt=""></a></li>
+										<li><a href="#"><img src="assets/images/img/instagram/2.png" alt=""></a></li>
+										<li><a href="#"><img src="assets/images/img/instagram/3.png" alt=""></a></li>
+										<li><a href="#"><img src="assets/images/img/instagram/1.png" alt=""></a></li>
+										<li><a href="#"><img src="assets/images/img/instagram/2.png" alt=""></a></li>
+										<li><a href="#"><img src="assets/images/img/instagram/3.png" alt=""></a></li>
+										<li><a href="#"><img src="assets/images/img/instagram/1.png" alt=""></a></li>
+										<li><a href="#"><img src="assets/images/img/instagram/2.png" alt=""></a></li>
+										<li><a href="#"><img src="assets/images/img/instagram/3.png" alt=""></a></li>
+									</ul>
+								</div>
+								<!-- End Instagram Photos -->
+							</div>
+							<!-- End Footer widget -->
+						</div>
+			    		<div class="col-xs-12 col-sm-6 col-md-3">
+						    <!-- Start Footer widget -->
+                            <div class="footer-widget widget-tweets">
+								<h4 class="widget-title">Twitter feed</h4>
+								<!-- Start Latest Tweets -->
+                                <div class="latest-tweets">
+                                    <ul>
+                                        <li>
+                                            <p class="tweet-text">Unify | Multipurpose HTML5 Template <a target="_blank" href="#">goo.gl/JrLd4m</a> <a target="_blank" href="#">pic.twitter.com/BUtj8woDGq</a></p>
+                                            <p class="tweet-details hidden-md"><strong>24 July 2016</strong></p>
+                                        </li>
+                                        <li>
+                                            <p class="tweet-text">Unify | Multipurpose HTML5 Template <a target="_blank" href="#">goo.gl/JrLd4m</a> <a target="_blank" href="#">pic.twitter.com/BUtj8woDGq</a></p>
+                                            <p class="tweet-details hidden-md"><strong>24 September 2016</strong></p>
+                                        </li>
+                                    </ul>
+                                </div>
+								<!-- End Latest Tweets -->
+							</div>
+							<!-- End Footer widget -->
+						</div>
+			    		<div class="col-xs-12 col-sm-6 col-md-3">
+						    <!-- Start Footer widget -->
+                            <div class="footer-widget widget-blog">
+								<h4 class="widget-title">Popular blog post</h4>
+								<!-- Start Widget Blog -->
+                                <div class="widget-blog">
+									<ul>
+										<li>
+											<!-- Start Post thumbnail -->
+											<div class="widget-blog-thumb hover-efect">
+												<a href="blog-single.html"><img src="assets/images/img/blog/101.png" alt="" /></a>
+											</div>
+											<!-- End Post thumbnail -->
+											<!-- Start Post Content -->
+											<div class="widget-blog-content">
+											    <p><a href="blog-single.html">Great Design Ever</a></p>
+											    <span>02 July 2016</span>
+											</div>
+											<!-- End Post Content -->
+										</li>
+										<li>
+											<!-- Start Post thumbnail -->
+											<div class="widget-blog-thumb hover-efect">
+												<a href="blog-single.html"><img src="assets/images/img/blog/102.png" alt="" /></a>
+											</div>
+											<!-- End Post thumbnail -->
+											<!-- Start Post Content -->
+											<div class="widget-blog-content">
+											    <p><a href="blog-single.html">Awesome Collection</a></p>
+											    <span>07 July 2016</span>
+											</div>
+											<!-- End Post Content -->
+										</li>
+										<li>
+											<!-- Start Post thumbnail -->
+											<div class="widget-blog-thumb hover-efect">
+												<a href="blog-single.html"><img src="assets/images/img/blog/103.png" alt="" /></a>
+											</div>
+											<!-- End Post thumbnail -->
+											<!-- Start Post Content -->
+											<div class="widget-blog-content">
+											    <p><a href="blog-single.html">Trendy Design 2016</a></p>
+											    <span>02 July 2016</span>
+											</div>
+											<!-- End Post Content -->
+										</li>
+									</ul>
+                                </div>
+								<!-- End Widget Blog -->
+							</div>
+							<!-- End Footer widget -->
+						</div>
+			    	</div>
+			    </div>
+			</div>
+			<!-- End Footer Top Area  -->
+			<!-- Start Footer Bottom -->
+		    <div class="footer-bottom-area">
+			    <div class="container">
+			    	<div class="row">
+			    		<div class="col-xs-12 col-sm-6 col-md-6">
+						    <!-- Start Copyright Text -->
+						    <div class="copyright-text">
+							    <p>Copyright &copy; BootItems. All Rights Reserved</p>
+							</div>
+							<!-- End Copyright Text -->
+						</div>
+			    		<div class="col-xs-12 col-sm-6 col-md-6">
+						    <!-- Start Footer Social Links -->
+                            <div class="footer-social-links">
+							    <!-- Start Soical Links -->
+                            	<ul class="social-links text-right social-dark text-right">
+									<li><a href="#" class="facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="googleplus" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="behance" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                            	</ul>
+								<!-- End Soical Links -->
+                            </div>
+							<!-- End Footer Social Links -->
+						</div>
+			    	</div>
+			    </div>
+			</div>
+			<!-- End Footer Bottom -->
+		</footer>
+		<!-- End Footer Area -->
+	</div>
+		<!-- All JS Here -->
+		<!-- jquery latest version -->
+        <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+		<!-- bootstrap js -->
+        <script src="assets/js/bootstrap.min.js"></script>
+		<!-- plugins js -->
+        <script src="assets/js/plugins.js"></script>
+		<!-- main js -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
