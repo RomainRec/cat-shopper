@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 20.times do
-  Item.create(title: Faker::Cat.unique.name, description: Faker::Cat.unique.breed, price: Faker::Number.decimal(2,2), image_url: "https://www.bluecross.org.uk/sites/default/files/assets/images/124044lpr.jpg" )
+  Item.create(title: Faker::Cat.unique.name, description: Faker::Cat.unique.breed, price: 12.99, image_url: "https://www.bluecross.org.uk/sites/default/files/assets/images/124044lpr.jpg" )
 end
 
 5.times do
