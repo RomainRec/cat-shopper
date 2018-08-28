@@ -7,7 +7,13 @@ gem 'devise'
 gem 'faker'
 gem 'rails-erd', group: :development
 gem 'dotenv'
-
+# gem qui permet de tester l'envoi d'email
+gem 'dotenv-rails'
+# gem qui permet de gérer des envois de mails automatiques
+gem 'letter_opener', group: :development
+gem 'mailjet'
+# gem qui permet de gérer des paiements en ligne sur ton app
+gem 'stripe'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
 
@@ -67,4 +73,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'rails-erd', group: :development
+
