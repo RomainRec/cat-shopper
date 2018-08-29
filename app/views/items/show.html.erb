@@ -27,106 +27,99 @@
 			<!-- End Banner Content -->
 		</div>
         <!-- End Page Banner -->
-		<!-- Start Site Content -->
-		<div class="site-content ptb-100">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-					    <!-- Start Content Area -->
-					    <div id="primary" class="content-area">
-                            <div class="row">
-								<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
-									<!-- Start Product Details Thumb -->
-									<div class="prodcut-details-thumb">
-										<div class="pdetails-inner clearfix">
-										   <!-- Start Details Big Thumbnail -->
-										   <div class="details-thumb-big">
-												<a href="#"><img src="../../assets/img/about/chat-about.jpg" alt="" /></a>
+				<!-- Start Site Content -->
+				<div class="site-content ptb-100">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+									<!-- Start Content Area -->
+									<div id="primary" class="content-area">
+																<div class="row">
+										<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
+											<!-- Start Product Details Thumb -->
+											<div class="prodcut-details-thumb">
+												<div class="pdetails-inner clearfix">
+													 <!-- Start Details Big Thumbnail -->
+													 <div class="details-thumb-big">
+														<%= image_tag(@item.image_url)  %>
+													</div>
+													<!-- End Details Big Thumbnail -->
+												</div>
 											</div>
-											<!-- End Details Big Thumbnail -->
-											<!-- Start Details Small Thumbnail -->
+											<!-- End Product Details Thumb -->
+										</div>
+										<div class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
+											<!-- Start Product Info -->
+											<div class="product-details-info">
+												<h1><%= @item.title %></h1>
+												<!-- Start Pice Box -->
+												<div class="price-box">
+													<div class="s-price-box">
+														<span class="new-price"><%= @item.price %>€</span>
+													</div>
+													<div class="star-rating pull-right">
+														<ul>
+															<li class="star yes"><i class="icofont icofont-star"></i></li>
+															<li class="star yes"><i class="icofont icofont-star"></i></li>
+															<li class="star yes"><i class="icofont icofont-star"></i></li>
+															<li class="star yes"><i class="icofont icofont-star"></i></li>
+															<li class="star"><i class="icofont icofont-star"></i></li>
+															<li>10 Reviews</li>
+														</ul>
+													</div>
+												</div>
+												<!-- End Pice Box -->
+												<div class="quick-desc">
+													<p><%= @item.description %></p>
+												</div>
 
-											<!-- End Details Big Thumbnail -->
+												<!-- Bouton STRIPE -->
+												<div class="quickview-btns">
+													<a href="#" class="btn btn-brown btn-flat">Add to cart</a>
+												</div>
+												<!-- Start Social Share -->
+												<div class="quickview-social-share">
+													<span><strong class="share">Share: </strong></span>
+													<ul class="widget-social-links">
+														<li><a href="#" class="facebook" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
+														<li><a href="#" class="twitter" target="_blank"><i class="icofont icofont-social-twitter"></i></a></li>
+														<li><a href="#" class="skype" target="_blank"><i class="icofont icofont-social-skype"></i></a></li>
+														<li><a href="#" class="google-plus" target="_blank"><i class="icofont icofont-social-behance"></i></a></li>
+														<li><a href="#" class="dribble" target="_blank"><i class="icofont icofont-social-dribbble"></i></a></li>
+													</ul>
+												</div>
+												<!-- End Social Share -->
+											</div>
+											<!-- End Product Info -->
+										</div>
+
+									</div>
+									<div class="row">
+										<div class="col-xs-12">
+											<!-- Start Product Description Tab -->
+											<div class="product-description-tab ptb-50">
+												<!-- Start Description Menu -->
+												<div class="description-tab-menu">
+													<ul role="tablist" class="clearfix">
+														<li class="active" role="presentation"><a data-toggle="tab" role="tab" aria-controls="description" href="#description" aria-expanded="true">Description</a></li>
+													</ul>
+												</div>
+												<!-- End Description Menu -->
+												<!-- Start Tab Content -->
+												<div class="tab-content">
+													<!-- Start Tab Panel -->
+													<div id="description" class="tab-pane active" role="tabpanel">
+														 <p><%= @item.description %></p>
+													</div>
+													<!-- End Tab Panel -->
+												</div>
+												<!-- End Tab Content -->
+											</div>
+											<!-- Start Product Description Tab -->
 										</div>
 									</div>
-									<!-- End Product Details Thumb -->
-								</div>
-								<div class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
-									<!-- Start Product Info -->
-									<div class="product-details-info">
-										<h1>Photographie de chat</h1>
-										<!-- Start Pice Box -->
-										<div class="price-box">
-											<div class="s-price-box">
-												<span class="new-price">$ 123.00</span>
-											</div>
-											<div class="star-rating pull-right">
-												<ul>
-													<li class="star yes"><i class="icofont icofont-star"></i></li>
-													<li class="star yes"><i class="icofont icofont-star"></i></li>
-													<li class="star yes"><i class="icofont icofont-star"></i></li>
-													<li class="star yes"><i class="icofont icofont-star"></i></li>
-													<li class="star"><i class="icofont icofont-star"></i></li>
-													<li>10 Reviews</li>
-												</ul>
-											</div>
-										</div>
-										<!-- End Pice Box -->
-										<div class="quick-desc">
-											<p>Ceci est une photo de chat. La photo est superbe avec ce chat tout mignon !</p>
-										</div>
-										<!-- Start Product Size -->
-
-										<!-- Start Social Share -->
-
-										<!-- End Social Share -->
 									</div>
-									<!-- End Product Info -->
-								</div>
-
-                            </div>
-							<div class="row">
-								<div class="col-xs-12">
-									<!-- Start Product Description Tab -->
-									<div class="product-description-tab ptb-50">
-										<!-- Start Description Menu -->
-										<div class="description-tab-menu">
-											<ul role="tablist" class="clearfix">
-												<li class="active" role="presentation"><a data-toggle="tab" role="tab" aria-controls="description" href="#description" aria-expanded="true">Description</a></li>
-												<li role="presentation" class=""><a data-toggle="tab" role="tab" aria-controls="review" href="#review" aria-expanded="false">Reviews</a></li>
-										  </ul>
-										</div>
-										<!-- End Description Menu -->
-										<!-- Start Tab Content -->
-										<div class="tab-content">
-											<!-- Start Tab Panel -->
-											<div id="description" class="tab-pane active" role="tabpanel">
-											   <p>Ceci est une photo de chat. La photo est superbe avec ce chat tout mignon !</p>
-											</div>
-											<!-- End Tab Panel -->
-											<!-- Start Tab Panel -->
-											<div id="review" class="tab-pane" role="tabpanel">
-												<p>Similique animi consequatur pariatur voluptas tempore, dolores obcaecati dolorum quia odit harum. Quos nemo, minima totam quidem ipsum labore.</p>
-												<ul>
-													<li>Minus placeat eligendi neque doloribus sed ratione repellendus a illo similique, sint quisquam perferendis eum nam nihil dolor fugit blanditiis, explicabo, recusandae hic qui exercitationem aspernatur excepturi voluptate unde. </li>
-													<li>Quaerat magnam, perferendis, sapiente doloremque error omnis esse in saepe quos eveniet quasi ex fugit eligendi consectetur nobis amet. </li>
-												</ul>
-											</div>
-											<!-- End Tab Panel -->
-										</div>
-										<!-- End Tab Content -->
-									</div>
-									<!-- Start Product Description Tab -->
-								</div>
+								<!-- End Content Area -->
 							</div>
-					    </div>
-						<!-- End Content Area -->
+						</div>
 					</div>
-				</div>
-			</div>
-			<!-- Start Related Products -->
-
-			<!-- End Related Products -->
-		</div>
-		<!-- End Site Content -->
-		<!-- Start Footer Area -->
