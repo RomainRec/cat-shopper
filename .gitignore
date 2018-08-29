@@ -27,8 +27,8 @@ mailjet.rb
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
+
 erd.pdf
 
 .env
-
-mailjet.rb
+/config/initializers/mailjet.rb
