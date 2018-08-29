@@ -7,7 +7,7 @@ class Registration < ApplicationRecord
   Stripe::Charge.create customer: customer.id,
                         amount: course.price * 100,
                         description: course.name,
-                        currency: 'usd'
+                        currency: 'eur'
 
 end
 

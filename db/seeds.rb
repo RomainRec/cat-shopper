@@ -6,10 +6,45 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-20.times do
-  Item.create(title: Faker::Cat.unique.name, description: Faker::Cat.unique.breed, price: 12.99, image_url: "https://www.bluecross.org.uk/sites/default/files/assets/images/124044lpr.jpg" )
-end
+
 
 5.times do
   User.create(firstname: Faker::DragonBall.unique.character, lastname: Faker::DrWho.specie, email: Faker::Internet.unique.email, password: "123456", password_confirmation: "123456"  )
+end
+
+catpics_url=[]
+catpics_url=[
+
+  "http://www.carolinameows.net/sitebuilder/images/QA03_154-659x440.jpg",
+  "http://ljubimci.telegraf.rs/wp-content/uploads/2017/05/31/macka1-659x440.jpg",
+  "http://www.redbuzz.fr/wp-content/uploads/2014/05/hungover-animals15-659x438.jpg",
+  "http://ljubimci.telegraf.rs/wp-content/uploads/2017/06/17/macka-659x440.jpg",
+  "http://ljubimci.telegraf.rs/wp-content/uploads/2017/06/08/macka-659x440.jpg",
+  "http://webneel.com/daily/sites/default/files/images/daily/02-2013/17-funny-photography.preview.jpg",
+  "https://images.pexels.com/photos/127028/pexels-photo-127028.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+  "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+  "https://images.pexels.com/photos/171227/pexels-photo-171227.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+  "https://images.pexels.com/photos/271955/pexels-photo-271955.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+  "https://images.pexels.com/photos/257532/pexels-photo-257532.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+  "https://images.pexels.com/photos/290164/pexels-photo-290164.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+  "https://images.pexels.com/photos/127027/pexels-photo-127027.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+  "https://images.pexels.com/photos/315582/pexels-photo-315582.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+  "https://images.pexels.com/photos/156934/pexels-photo-156934.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+  "https://images.pexels.com/photos/7517/animal-sitting-animals-inside.jpg?auto=compress&cs=tinysrgb&h=650&w=940",
+  "https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+  "https://images.pexels.com/photos/96938/pexels-photo-96938.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+  "https://images.pexels.com/photos/248280/pexels-photo-248280.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+  "https://images.pexels.com/photos/730896/pexels-photo-730896.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+  "https://images.pexels.com/photos/774731/pexels-photo-774731.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+  "https://images.pexels.com/photos/479009/pexels-photo-479009.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+  "https://images.pexels.com/photos/1234096/pexels-photo-1234096.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+  "https://images.pexels.com/photos/1275451/pexels-photo-1275451.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+  "https://images.pexels.com/photos/674570/pexels-photo-674570.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+  "https://images.pexels.com/photos/33537/cat-animal-cat-portrait-mackerel.jpg?auto=compress&cs=tinysrgb&h=650&w=940"
+]
+
+catpics_url.each do |url|
+
+    Item.create(title: Faker::Cat.unique.name, description: Faker::Cat.unique.breed, price: 12.99, image_url: url )
+
 end
