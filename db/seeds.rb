@@ -7,7 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-
+ User.delete_all
+ Item.delete_all
 5.times do
   User.create(firstname: Faker::DragonBall.unique.character, lastname: Faker::DrWho.specie, email: Faker::Internet.unique.email, password: "123456", password_confirmation: "123456"  )
 end
