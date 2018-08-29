@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
+rails db:drop 
 
 5.times do
   User.create(firstname: Faker::DragonBall.unique.character, lastname: Faker::DrWho.specie, email: Faker::Internet.unique.email, password: "123456", password_confirmation: "123456"  )
