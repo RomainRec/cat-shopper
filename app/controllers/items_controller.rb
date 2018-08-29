@@ -8,11 +8,11 @@ class ItemsController < ApplicationController
   end
 
   def show
-    @item = Item.new(params[:item])
+    @item = Item.find(params[:id])
   end
 
   def create
-    @item = Item.new(params[:item])
+    @item = Item.new(params[:id])
     if @item.save
       redirect_to items_url, notice: "Item successfully created."
     else

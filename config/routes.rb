@@ -3,10 +3,10 @@ Rails.application.routes.draw do
   root 'pages#index'
   get 'pages/presentation', to: 'pages#presentation'
   get 'items/index', to: 'items#index'
-  resource :items
+  resources :items
   get 'carts/index', to: 'carts#index'
-  resource :carts
+  resources :carts
   get 'orders/index', to: 'orders#index'
-  resource :orders
+  resources :orders
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
