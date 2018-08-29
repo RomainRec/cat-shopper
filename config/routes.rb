@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: {sessions: 'users/sessions'}
   root 'pages#index'
+  get 'pages/presentation', to: 'pages#presentation'
   get 'items/index', to: 'items#index'
   resource :items
-  get 'cards/index', to: 'cards#index'
+  get 'carts/index', to: 'carts#index'
   resource :carts
   get 'orders/index', to: 'orders#index'
   resource :orders
