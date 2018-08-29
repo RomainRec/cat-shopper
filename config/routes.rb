@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :cart_items
   devise_for :users, controllers: {sessions: 'users/sessions'}
   root 'pages#index'
   get 'pages/presentation', to: 'pages#presentation'
