@@ -8,7 +8,7 @@ class CartsController < ApplicationController
   end
 
   def show
-    @card = Card.new(params[:id])
+    @card = Card.find(params[:cart])
   end
 
   def edit
