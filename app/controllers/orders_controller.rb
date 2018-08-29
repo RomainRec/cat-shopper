@@ -4,7 +4,7 @@ class OrdersController < ApplicationController
   end
 
   def new
-    @orde = Order.new
+    @order = Order.new
   end
 
   def show
