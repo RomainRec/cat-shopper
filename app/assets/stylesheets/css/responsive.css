@@ -4,7 +4,7 @@ Template URI: www.bootitems.com
 Description: This is a multipurpose html5 template
 Author: Masud Rana
 Author URI: www.bootitems.com
-Version: 1.0  
+Version: 1.0
 
 Note: This file includes styles for normal desktop, tablet, large mobile and small mobile;
 	-------------------------------------------------------------------------------*/
@@ -39,7 +39,8 @@ Normal desktop :992px. =============================*/
 /*=================================================
  Tablet desktop :768px.============================ */
 @media (min-width: 768px) and (max-width: 991px) {
-.wrapper.boxed-layout, .boxed-layout .sticky {width:740px;}		
+
+.wrapper.boxed-layout, .boxed-layout .sticky {width:740px;}
 .header-navigation {background: #ffffff none repeat scroll 0 0;	position: relative;}
 .header-style-3 .header-area {position: relative;}
 .header-style-4 .header-area {position: relative;}
@@ -94,13 +95,14 @@ Normal desktop :992px. =============================*/
 /* ==================================================================================
 Small Mobile :320px. ================================================================*/
 @media (max-width: 767px) {
-.wrapper.boxed-layout, .boxed-layout .sticky {width:310px;}	
+.wrapper.boxed-layout, .boxed-layout .sticky {width:310px;}
 .container {width:300px}
 .top-left-info{text-align:center;}
 .list-menu {text-align: center;  float:none !important;}
 .list-menu > li {margin-left: 16px;}
 .list-menu > li {display: inline-block;  float: none;}
 .list-menu > li::after {display: none;}
+.main-menu-wrap {display: none;}
 .mobile-menu-area {width:270px}
 .header-navigation {background: #ffffff none repeat scroll 0 0;	position: relative;}
 .travel .header-navigation, .resturant .header-top-bar {background: #353535;}
@@ -216,7 +218,7 @@ Small Mobile :320px. ===========================================================
 }
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-.wrapper.boxed-layout, .boxed-layout .sticky {width:470px;}	
+.wrapper.boxed-layout, .boxed-layout .sticky {width:470px;}
 .container {width:450px}
 .mobile-menu-area {width:420px}
 .header-navigation {background: #ffffff none repeat scroll 0 0;	position: relative;}
@@ -271,7 +273,7 @@ Small Mobile :320px. ===========================================================
 .tb-post {padding: 30px 20px;}
 .tb-meta {font-size: 11px;font-weight: 700;}
 .plan-details .btn-tra {font-size: 16px;font-weight: 700;padding: 4px 20px;margin: 20px 5px 0; }
-.const-member{text-align:center;} 
+.const-member{text-align:center;}
 .const-member {padding: 10px 0;}
 #patient-quotes .owl-controls .owl-next {right: 20%;}
 #patient-quotes .owl-controls .owl-prev {left: 20%;}

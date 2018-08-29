@@ -2347,7 +2347,8 @@ CSS INDEX
 .product-thumbnail img {
 	display: block;
 	margin: auto;
-	width: 100%;
+	width: 255px;
+  height: 170px;
 }
 .single-product:hover .product-thumbnail{
     box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.35);

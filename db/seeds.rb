@@ -7,7 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-
+ User.delete_all
+ Item.delete_all
 5.times do
   User.create(firstname: Faker::DragonBall.unique.character, lastname: Faker::DrWho.specie, email: Faker::Internet.unique.email, password: "123456", password_confirmation: "123456"  )
 end
@@ -22,7 +23,7 @@ catpics_url=[
   "http://ljubimci.telegraf.rs/wp-content/uploads/2017/06/08/macka-659x440.jpg",
   "http://webneel.com/daily/sites/default/files/images/daily/02-2013/17-funny-photography.preview.jpg",
   "https://images.pexels.com/photos/127028/pexels-photo-127028.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-  "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+  "https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
   "https://images.pexels.com/photos/171227/pexels-photo-171227.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
   "https://images.pexels.com/photos/271955/pexels-photo-271955.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
   "https://images.pexels.com/photos/257532/pexels-photo-257532.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",

@@ -10,10 +10,10 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # POST /resource
-  #def create
-  #puts "#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
-  # super
-  #end
+  def create
+  puts "#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+   super
+  end
 
   # GET /resource/edit
   # def edit
