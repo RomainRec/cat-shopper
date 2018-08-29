@@ -1,35 +1,35 @@
 class CartsController < ApplicationController
   def index
-    @carts = Card.all
+    @carts = Cart.all
   end
 
   def new
-    @card = Card.new
+    @cart = Cart.new
   end
 
   def show
-    @card = Card.find(params[:cart])
+    @cart = Cart.find(params[:cart])
   end
 
   def edit
-    @card = Card.find(params[:id])
+    @cart = Cart.find(params[:id])
   end
 
   def save
-    @card = Card.new(params[:card])
-    if @card.save
-      redirect_to cards_url, notice: "Card successfully created."
+    @cart = Cart.new(params[:cart])
+    if @cart.save
+      redirect_to carts_url, notice: "Cart successfully created."
     else
       render :new
     end
   end
 
   def destroy
-    @card = Card.find(params[:id])
+    @cart = Cart.find(params[:id])
     if @item.destroy
-      redirect_to cards_url, notice: "Card successfully deleted."
+      redirect_to carts_url, notice: "Cart successfully deleted."
     else
-      redirect_to cards_url, notice: "Not possible to destroy the Card."
+      redirect_to carts_url, notice: "Not possible to destroy the Cart."
     end
   end
 end
