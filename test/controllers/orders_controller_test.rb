@@ -10,6 +10,12 @@ class OrdersControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "order can't be placed with an empty cart" do
+    get new_order_url
+    assert_redirected_to root_path
+    assert_equal flash[:notice], "Votre panier est vide"
+  end
+
   test "should get new" do
     get new_order_url
     assert_response :success

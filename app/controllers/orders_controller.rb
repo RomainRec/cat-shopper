@@ -1,4 +1,7 @@
 class OrdersController < ApplicationController
+  include CurrentCard
+  before_action :set_cart, only: [:new, :create]
+  before_action :redirect_if_cart_is_empty, only: :new
   before_action :set_order, only: [:show, :edit, :update, :destroy]
 
   # GET /orders
@@ -70,5 +73,11 @@ class OrdersController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_params
       params.require(:order).permit(:email, :status, :cart_id)
+    end
+
+    def redirect_if_cart_is_empty
+      if @cart.line_items.empty?
+        redirect_to root_url, notice: "Votre panier est vide"
+      end
     end
 end
