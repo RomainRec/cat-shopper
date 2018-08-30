@@ -5,11 +5,15 @@ class UserMailer < ApplicationMailer
      mail(from: "thpcatshopping@gmail.com", to: @user, subject: "Petit message de bienvenue")
   end
 
-  def user_order(user, amount)
-    @user = user
-    @amount = amount
-     mail(from: "thpcatshopping@gmail.com", to: @user, subject: "Votre commande")
+  def user_order(email, cart)
+    @email = email
+    @cart = cart
+    mail(from: "thpcatshopping@gmail.com", to: email, subject: "Votre commande")
    end
 
-
+   def admin_order(amount)
+    @amount = amount
+     mail(from: "thpcatshopping@gmail.com", to: "admin_thpcatshopping@gmail.com", subject: "Nouvelle commande passée")
+  end
 end
+
