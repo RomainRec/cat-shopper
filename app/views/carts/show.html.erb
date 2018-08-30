@@ -21,4 +21,7 @@
   <div class="col">
     <%= button_to "vider le panier", @cart, method: :delete, data: { confirm: "Êtes-vous sûr ?" }, class: "btn btn-danger" %>
   </div>
+  <div class="col">
+    <%= button_to "Acheter", new_order_path, method: :get, class: "btn btn-success mb-2" %>
+  </div>
 </div>

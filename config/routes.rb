@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
+
+  resources :orders
+  resources :cart_items
   resources :line_items
+
   devise_for :users, controllers: {sessions: 'users/sessions'}
   root 'pages#index'
   get 'pages/presentation', to: 'pages#presentation'
@@ -7,6 +11,8 @@ Rails.application.routes.draw do
   resources :items
 
   resources :carts
+
+  get 'orders/index', to: 'orders#index'
 
   resources :charges
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
