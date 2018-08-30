@@ -66,6 +66,10 @@ rescue_from ActiveRecord::RecordNotFound, with: :cart_not_found
   end
 
   private
+  def cart_not_found
+    redirect_to root_url, alert: t(".cart_not_found")
+  end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_cart
       @cart = Cart.find(params[:id])
@@ -73,6 +77,6 @@ rescue_from ActiveRecord::RecordNotFound, with: :cart_not_found
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cart_params
-      params.fetch(:cart, {})
+      params.fetch(:cart_id, {})
     end
 end
