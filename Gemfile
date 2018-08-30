@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+gem "aws-sdk-s3", require: false
+
 gem 'devise'
 gem 'faker'
 gem 'rails-erd', group: :development
@@ -75,4 +77,3 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'stripe'
-
