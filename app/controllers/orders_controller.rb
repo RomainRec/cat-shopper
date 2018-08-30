@@ -1,5 +1,5 @@
 class OrdersController < ApplicationController
-  include CurrentCard
+  include CurrentCart
   before_action :set_cart, only: [:new, :create]
   before_action :redirect_if_cart_is_empty, only: :new
   before_action :set_order, only: [:show, :edit, :update, :destroy]
@@ -28,10 +28,12 @@ class OrdersController < ApplicationController
   # POST /orders.json
   def create
     @order = Order.new(order_params)
+    @order.cart = @cart
 
     respond_to do |format|
       if @order.save
-        format.html { redirect_to @order, notice: 'Order was successfully created.' }
+        session.delete(:cart_id)
+        format.html { redirect_to root_path, notice: 'Commande validée.' }
         format.json { render :show, status: :created, location: @order }
       else
         format.html { render :new }
@@ -72,7 +74,7 @@ class OrdersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_params
-      params.require(:order).permit(:email, :status, :cart_id)
+      params.require(:order).permit(:email)
     end
 
     def redirect_if_cart_is_empty
