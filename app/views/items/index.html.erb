@@ -20,7 +20,7 @@
 														<!-- Start Product Buttons -->
 														<div class="product-buttons">
 															<a href="#" class="btn-wishlist"><i class="icofont icofont-ui-love"></i></a>
-															<a href="#" class="btn-addtocart"><i class="icofont icofont-ui-cart"></i></a>
+															<%= link_to "", cart_items_path(item_id: @item), class: 'icofont icofont-ui-cart' %>
 															<%= link_to "", single, class: 'btn-quickview modal-view detail-link quickview icofont icofont-eye-alt' %>
 														</div>
 														<!-- End Product Buttons -->

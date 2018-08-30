@@ -72,10 +72,11 @@
 												<div class="quick-desc">
 													<p><%= @item.description %></p>
 												</div>
+												
 
 												<!-- Bouton Add to cart -->
 												<div class="quickview-btns">
-													<a href="#" class="btn btn-brown btn-flat">Add to cart</a>
+													<%= button_to "Add to cart", cart_items_path(item_id: @item), class: 'btn btn-brown btn-flat' %>
 												</div>
 												<!-- Start Social Share -->
 												<div class="quickview-social-share">
