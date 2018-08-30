@@ -11,4 +11,5 @@ class UserMailer < ApplicationMailer
      mail(from: "thpcatshopping@gmail.com", to: @user, subject: "Votre commande")
    end
 
+
 end
