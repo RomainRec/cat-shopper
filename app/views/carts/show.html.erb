@@ -12,7 +12,7 @@
     <% end %>
 </ul>
 
-<p class="font-weight-bold">Total : <span class="badge badge-info"><%= number_to_currency(cart.total, unit: "€", separator: ".", format: "%n %u") %></span></p>
+<p class="font-weight-bold">Total : <span class="badge badge-info"><%= number_to_currency(@cart.total, unit: "€", separator: ".", format: "%n %u") %></span></p>
 
 <div class="row">
   <div class="col">

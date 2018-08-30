@@ -77,6 +77,6 @@ rescue_from ActiveRecord::RecordNotFound, with: :cart_not_found
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cart_params
-      params.fetch(:cart_id, {})
+      params.fetch(:cart, {})
     end
 end
