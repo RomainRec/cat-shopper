@@ -36,9 +36,9 @@
                         </td>
                         <td class="cart-ithumbnail"></td>
                         <td class="cart-iname"><%= chat.item.title %></td>
-                        <td class="cart-iprice"><%= number_to_currency(chat.total, unit: "€", separator: ".", format: "%n %u") %></td>
+                        <td class="cart-iprice"><%= number_to_currency(chat.item.price, unit: "€", separator: ".", format: "%n %u") %></td>
                         <td class="cart-iquantity"><%= chat.quantity %></td>
-                        <td class="cart-itotal">$169.00</td>
+                        <td class="cart-itotal"><%= number_to_currency(chat.total, unit: "€", separator: ".", format: "%n %u") %></td>
                       </tr>
                     <% end %>
                   </tbody>
