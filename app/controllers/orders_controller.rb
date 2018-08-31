@@ -1,4 +1,5 @@
 class OrdersController < ApplicationController
+    before_action :authenticate_user!, only: [:new, :edit, :update, :destroy]
   include CurrentCart
   before_action :set_cart, only: [:new, :create]
   before_action :redirect_if_cart_is_empty, only: :new

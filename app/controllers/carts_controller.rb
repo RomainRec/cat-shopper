@@ -1,4 +1,5 @@
 class CartsController < ApplicationController
+  before_action :authenticate_user!, only: [:new,:show, :edit, :update, :destroy]
   rescue_from ActiveRecord::RecordNotFound, with: :cart_not_found
   before_action :set_cart, only: [:show, :edit, :update, :destroy]
 
@@ -65,18 +66,27 @@ class CartsController < ApplicationController
     end
   end
 
+
   private
+  def logged_in_user
+    unless logged_in?
+      store_location
+      flash[:danger] = "please log in"
+      redirect_to root_path
+    end
+  end
+
   def cart_not_found
     redirect_to root_url, alert: t(".cart_not_found")
   end
 
-    # Use callbacks to share common setup or constraints between actions.
-    def set_cart
-      @cart = Cart.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_cart
+    @cart = Cart.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def cart_params
-      params.fetch(:cart, {})
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def cart_params
+    params.fetch(:cart, {})
+  end
 end

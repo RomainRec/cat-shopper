@@ -18,7 +18,7 @@
                 <table class="table-condensed table-bordered cart-table">
                   <thead>
                     <tr>
-                      <th class="cart-iremove">Supprimer</th>
+
                       <th class="cart-ithumbnail">Produit</th>
                       <th class="cart-iname">Nom</th>
                       <th class="cart-iprice">Prix</th>
@@ -29,11 +29,6 @@
                   <tbody>
                     <% @cart.line_items.each do |chat| %>
                       <tr>
-                        <td class="cart-iremove">
-                          <a href="#">
-                            <i class="icofont icofont-close"></i>
-                          </a>
-                        </td>
                         <td class="cart-ithumbnail"></td>
                         <td class="cart-iname"><%= chat.item.title %></td>
                         <td class="cart-iprice"><%= number_to_currency(chat.item.price, unit: "€", separator: ".", format: "%n %u") %></td>

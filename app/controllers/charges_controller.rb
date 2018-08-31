@@ -1,4 +1,5 @@
 class ChargesController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :edit, :update, :destroy]
   include CurrentCart
   before_action :set_cart, only: [:new, :create]
 
