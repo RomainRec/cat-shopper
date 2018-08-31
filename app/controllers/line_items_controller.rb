@@ -28,7 +28,6 @@ class LineItemsController < ApplicationController
   # POST /line_items.json
   def create
     item = Item.find(params[:item_id])
-    
     @line_item = @cart.line_items.find_by(item: item)
     if @line_item
       @line_item.quantity += 1

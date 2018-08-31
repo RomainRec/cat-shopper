@@ -4,7 +4,7 @@ class ChargesController < ApplicationController
 
   def new
     get_cart
-    @total = @cart.line_items.to_a.sum {|li| li.item.price }
+    @total = @cart.total
     @pay = @total
   end
 
